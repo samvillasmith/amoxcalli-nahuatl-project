@@ -1,6 +1,6 @@
 # Controlled MSN Draft v0 Review
 
-This is the first controlled MSN review draft. It is not public-ready prose. Lines have been rewritten where needed to stay inside the current vocabulary and grammar decisions.
+This is controlled MSN local draft evidence. It is not public-ready prose and it is not the validation target. Lines have been rewritten where needed to stay inside the current vocabulary and grammar decisions.
 
 | Page | English source | Controlled MSN review line | Patterns | Backtranslation | Status |
 |---|---|---|---|---|---|
@@ -17,4 +17,4 @@ This is the first controlled MSN review draft. It is not public-ready prose. Lin
 | 11 | Evening comes. | Onka tiotlak. | CHILD-PAT-007 | There is evening. | review_only_rewritten_to_avoid_unresolved_come |
 | 12 | The child sleeps. | Pilkonetsi kochi. | CHILD-PAT-002 | The child sleeps. | review_only |
 
-Next step: review each line against `grammar_decisions.csv`, then either approve, rewrite, or move it back to the scaffold.
+Next step: use this only as evidence while the whole MSN system is validated through `../../reviewer_care_package/`.

@@ -6,9 +6,11 @@ Working deliverable label: D20 Capstone Learner Book.
 
 ## Purpose
 
-**Learn Modern Standard Nahuatl** is the final learner-facing book that should come at the end of the FCN/MSN process. It should not be the first public artifact. It depends on the earlier system work being stable enough that a learner can trust the grammar, vocabulary, examples, source notes, and register labels.
+**Learn Modern Standard Nahuatl** is the final learner-facing book that should come at the end of the FCN/MSN process. It should not be the first public artifact. It depends on full MSN-system validation: orthography, grammar, vocabulary, examples, source notes, register labels, prose-writing readiness, and poetic/literary readiness.
 
 This book is the synthesis of the project: a practical course in MSN neutral, supported by the master lexicon, D16 grammar manual, approved authoring pack, demonstration texts, QA protocol, and public dictionary layer.
+
+The book should teach someone enough MSN to write a short prose text, write a short book, and begin composing poetry while keeping register boundaries visible.
 
 ## Why It Comes Last
 
@@ -18,7 +20,9 @@ The book needs:
 - completed D16 grammar chapters
 - stable orthography and style rules
 - 20+ reviewed MSN examples
-- sample prose that has passed QA
+- sample prose and instructional examples that have passed QA
+- validated prose-writing patterns
+- validated poetic/literary register guidance
 - a public-safe glossary
 - source and register notes visible to readers
 - speaker/community review status recorded
@@ -63,6 +67,7 @@ The capstone book is complete only when it can serve as a standalone learner boo
 - glossary and sentence pattern index are complete
 - publication QA is complete
 - final version number, license, source note, and register note are included
+- reviewers have validated that the system can support learner prose, book writing, and poetry
 
 ## Relationship To Earlier Deliverables
 
@@ -70,5 +75,5 @@ The capstone book is complete only when it can serve as a standalone learner boo
 - D16 MSN Manual supplies the grammar authority.
 - D17 Poetic Manual defines what the learner book should not blur into MSN-P.
 - D18 Dictionary Manual supports glossary and lookup conventions.
-- D19 Demonstration Text proves that MSN can produce controlled readable prose.
-- D20 **Learn Modern Standard Nahuatl** turns the complete system into the final book.
+- D19 Demonstration Texts provide evidence that MSN can produce controlled readable prose after system validation.
+- D20 **Learn Modern Standard Nahuatl** turns the complete validated system into the final book.

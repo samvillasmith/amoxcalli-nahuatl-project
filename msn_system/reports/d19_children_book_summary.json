@@ -27,6 +27,6 @@
     "BLOCKER": 1
   },
   "status": "controlled_msn_review_packet_created",
-  "public_release_status": "blocked_pending_editorial_and_speaker_community_validation",
-  "next_step": "Promote or rewrite the 12 review-only lines through editorial and speaker/community validation."
+  "public_release_status": "blocked_pending_whole_msn_validation",
+  "next_step": "Use D19 only as internal drafting evidence; the next real gate is whole-MSN validation through reviewer_care_package."
 }

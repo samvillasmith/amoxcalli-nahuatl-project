@@ -1,5 +1,5 @@
 {
-  "database": "curriculum\\fcn_master_lexicon_phase8_6_primer.sqlite",
+  "database": "database\\fcn_master_lexicon_phase8_6_primer.sqlite",
   "quick_check": "ok",
   "outputs": {
     "msn_inventory.csv": 37146,

@@ -366,8 +366,8 @@ def build_qa_rows(
             "check_id": "D19-QA-007",
             "check": "Public-release readiness",
             "status": "BLOCKER" if review_only_lines else "PASS",
-            "evidence": f"{len(review_only_lines)} review-only lines; speaker/community status file recorded: {'yes' if speaker_status_recorded else 'no'}; completed validation: no.",
-            "action_needed": "Complete editorial and speaker/community review, then promote or rewrite each review-only line.",
+            "evidence": f"Local draft remains review-only; speaker/community status file recorded: {'yes' if speaker_status_recorded else 'no'}; whole-MSN validation completed: no.",
+            "action_needed": "Complete whole-MSN validation through the reviewer care package before treating any demonstration text as public prose.",
         },
         {
             "check_id": "D19-QA-008",
@@ -425,7 +425,7 @@ def write_qa_report(qa_rows: list[dict[str, str]], glossary_rows: list[dict[str,
             "",
             "## Release Decision",
             "",
-            "The current manuscript can be used for internal controlled drafting review. It is blocked from public release until editorial and speaker/community validation promote or rewrite the review-only lines, the final glossary is approved, and the publication layout/export passes QA.",
+            "The current manuscript can be used as internal controlled-drafting evidence. It is blocked from public release until whole-MSN validation approves the relevant grammar, vocabulary, register boundaries, final glossary, and publication layout/export.",
         ]
     )
     (D19_DIR / "qa_report_v0.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -786,7 +786,7 @@ Status: planning and controlled-drafting scaffold. This is not public-ready MSN 
 
 ## Purpose
 
-Use the safest available MSN neutral drafting layer to create a short children-book manuscript. The book should prove that FCN can support concrete, readable, source-tracked prose without collapsing EHN, MSN neutral, and MSN-P.
+Use the safest available MSN neutral drafting layer to create a short children-book manuscript as internal evidence. This packet does not prove or validate the whole standard by itself; it shows where the current system can draft and where whole-MSN review must still decide grammar, vocabulary, register, and publication readiness.
 
 ## Files
 
@@ -795,7 +795,7 @@ Use the safest available MSN neutral drafting layer to create a short children-b
 - `book_glossary_seed.csv` - glossary rows actually used by the controlled draft.
 - `manuscript_source_en.md` - simple English planning manuscript.
 - `controlled_msn_draft_scaffold.md` - slot-based MSN draft scaffold, not final prose.
-- `controlled_msn_draft_v0_review.md` - first controlled MSN review draft.
+- `controlled_msn_draft_v0_review.md` - controlled MSN local draft evidence, not final prose.
 - `unresolved_terms.csv` - missing or risky terms to resolve before final translation.
 - `qa_checklist.md` - checks required before public release.
 - `qa_report_v0.md` - automated QA report for the current review packet.
@@ -871,9 +871,9 @@ Next step: resolve the grammar patterns before converting slots into final MSN s
         )
     (D19_DIR / "controlled_msn_draft_v0_review.md").write_text(
         "# Controlled MSN Draft v0 Review\n\n"
-        "This is the first controlled MSN review draft. It is not public-ready prose. Lines have been rewritten where needed to stay inside the current vocabulary and grammar decisions.\n\n"
+        "This is controlled MSN local draft evidence. It is not public-ready prose and it is not the validation target. Lines have been rewritten where needed to stay inside the current vocabulary and grammar decisions.\n\n"
         + "\n".join(draft_table)
-        + "\n\nNext step: review each line against `grammar_decisions.csv`, then either approve, rewrite, or move it back to the scaffold.\n",
+        + "\n\nNext step: use this only as evidence while the whole MSN system is validated through `../../reviewer_care_package/`.\n",
         encoding="utf-8",
     )
     source_note_rows = [
@@ -908,7 +908,7 @@ The controlled MSN draft uses the MSN authoring seed, the provisional internal c
 
 ## Release Rule
 
-Do not treat this packet as a final public book until D16 grammar review, speaker/community validation, final glossary review, source/register note approval, and layout/export QA are complete.
+Do not treat this packet as a final public book until whole-MSN validation, D16 grammar review, speaker/community validation, final glossary review, source/register note approval, and layout/export QA are complete.
 """,
         encoding="utf-8",
     )
@@ -929,7 +929,7 @@ This file makes the validation status visible. It does not substitute for actual
 
 ## Current Decision
 
-The D19 v0 packet can be used for internal controlled-drafting review. It cannot be labeled as speaker/community validated or public-ready.
+The D19 v0 packet can be used as internal controlled-drafting evidence. It cannot be labeled as speaker/community validated, system-validated, or public-ready.
 """,
         encoding="utf-8",
     )
@@ -951,7 +951,7 @@ Current status: final publication artifact not created.
 
 ## Layout Gate
 
-Do not create final PDF/print layout until all lines in `controlled_msn_draft_v0_review.md` are promoted out of review-only status or rewritten.
+Do not create final PDF/print layout until whole-MSN validation has approved the grammar patterns, vocabulary, register notes, and publication safeguards needed by this text.
 
 ## Release Gate
 
@@ -1029,8 +1029,8 @@ def main() -> None:
             for status in ["PASS", "WARN", "BLOCKER"]
         },
         "status": "controlled_msn_review_packet_created",
-        "public_release_status": "blocked_pending_editorial_and_speaker_community_validation",
-        "next_step": "Promote or rewrite the 12 review-only lines through editorial and speaker/community validation.",
+        "public_release_status": "blocked_pending_whole_msn_validation",
+        "next_step": "Use D19 only as internal drafting evidence; the next real gate is whole-MSN validation through reviewer_care_package.",
     }
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     with (REPORT_DIR / "d19_children_book_summary.json").open("w", encoding="utf-8") as f:

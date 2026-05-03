@@ -18,13 +18,22 @@ $artifacts = @(
   @{ Local = "curriculum/fcn_master_lexicon_phase8_3_exports.sqlite"; Key = "fcn_master_lexicon_phase8_3_exports.sqlite" },
   @{ Local = "curriculum/fcn_master_lexicon_phase8_4_assessment.sqlite"; Key = "fcn_master_lexicon_phase8_4_assessment.sqlite" },
   @{ Local = "curriculum/fcn_master_lexicon_phase8_5_products.sqlite"; Key = "fcn_master_lexicon_phase8_5_products.sqlite" },
-  @{ Local = "curriculum/fcn_master_lexicon_phase8_6_primer.sqlite"; Key = "fcn_master_lexicon_phase8_6_primer.sqlite" }
+  @{ Local = "database/fcn_master_lexicon_phase8_6_primer.sqlite"; AltLocal = "curriculum/fcn_master_lexicon_phase8_6_primer.sqlite"; Key = "fcn_master_lexicon_phase8_6_primer.sqlite" }
 )
 
 foreach ($artifact in $artifacts) {
   $localPath = Join-Path $repoRoot $artifact.Local
   if (-not (Test-Path -LiteralPath $localPath)) {
-    throw "Missing artifact: $localPath"
+    if ($artifact.ContainsKey("AltLocal")) {
+      $altPath = Join-Path $repoRoot $artifact.AltLocal
+      if (Test-Path -LiteralPath $altPath) {
+        $localPath = $altPath
+      } else {
+        throw "Missing artifact: $localPath and fallback $altPath"
+      }
+    } else {
+      throw "Missing artifact: $localPath"
+    }
   }
 
   $target = "$BucketUri/$($artifact.Key)"

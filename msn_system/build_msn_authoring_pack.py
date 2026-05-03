@@ -9,7 +9,9 @@ from typing import Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
 MSN_DIR = Path(__file__).resolve().parent
-DB_PATH = ROOT / "curriculum" / "fcn_master_lexicon_phase8_6_primer.sqlite"
+CANONICAL_DB_PATH = ROOT / "database" / "fcn_master_lexicon_phase8_6_primer.sqlite"
+LEGACY_DB_PATH = ROOT / "curriculum" / "fcn_master_lexicon_phase8_6_primer.sqlite"
+DB_PATH = CANONICAL_DB_PATH if CANONICAL_DB_PATH.exists() else LEGACY_DB_PATH
 ORTHO_CANDIDATES = ROOT / "orthography" / "ehn_to_msn_candidates.csv"
 EXPORT_DIR = MSN_DIR / "exports"
 REPORT_DIR = MSN_DIR / "reports"

@@ -14,4 +14,4 @@ This file makes the validation status visible. It does not substitute for actual
 
 ## Current Decision
 
-The D19 v0 packet can be used for internal controlled-drafting review. It cannot be labeled as speaker/community validated or public-ready.
+The D19 v0 packet can be used as internal controlled-drafting evidence. It cannot be labeled as speaker/community validated, system-validated, or public-ready.

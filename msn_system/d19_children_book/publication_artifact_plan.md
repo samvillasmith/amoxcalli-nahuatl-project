@@ -15,7 +15,7 @@ Current status: final publication artifact not created.
 
 ## Layout Gate
 
-Do not create final PDF/print layout until all lines in `controlled_msn_draft_v0_review.md` are promoted out of review-only status or rewritten.
+Do not create final PDF/print layout until whole-MSN validation has approved the grammar patterns, vocabulary, register notes, and publication safeguards needed by this text.
 
 ## Release Gate
 

@@ -6,7 +6,7 @@ MSN neutral is not spoken EHN written down without review, and it is not classic
 
 ## Inputs
 
-- `../curriculum/fcn_master_lexicon_phase8_6_primer.sqlite` - canonical production database.
+- `../database/fcn_master_lexicon_phase8_6_primer.sqlite` - canonical production database fetched from the S3 source-of-truth location.
 - `../docs/register_charter_v0.1.md` - register definitions and governance.
 - `../docs/Flor y Canto Nahuatl Source Hierarchy Document.md` - source authority and unresolved-case policy.
 - `../reference_manuals/fcn_deliverable16_msn_manual.md` - current MSN manual draft.
@@ -32,7 +32,7 @@ The generators create:
 - `exports/msn_authoring_lexicon_seed.csv` - internal drafting lexicon seed.
 - `exports/approved_msn_core_seed.csv` - provisional internal core seed.
 - `exports/msn_sentence_patterns.csv` - seed sentence templates.
-- `d19_children_book/` - first children-book controlled review packet.
+- `d19_children_book/` - generated children-book demonstration packet for internal drafting evidence.
 - `reports/msn_phase_b_summary.json` - row counts and distribution checks.
 - `reports/msn_authoring_pack_summary.json` - authoring-pack counts and checks.
 - `reports/d19_children_book_summary.json` - D19 children-book counts and QA status.
@@ -53,6 +53,6 @@ The intended Phase B workflow is: preserve evidence first, propose an MSN decisi
 
 ## Current Limits
 
-This is a seed system, not a finished MSN authority layer. It organizes the existing evidence and exposes review work. The D19 children-book packet proves that controlled MSN drafting is achievable, but public release is blocked until editorial and speaker/community validation promote or rewrite the 12 review-only lines.
+This is a seed system, not a finished MSN authority layer. It organizes the existing evidence and exposes the review work needed for the full standard. A generated demonstration packet can show how controlled drafting behaves, but it is not the validation target. The real gate is whole-system reviewer validation: orthography, register boundaries, grammar, lexicon/headwords, examples, prose-writing readiness, poetic/literary readiness, and learner-book readiness.
 
 The final capstone deliverable is **Learn Modern Standard Nahuatl**. That book should come last, after the MSN grammar, lexicon, QA process, demonstration texts, glossary conventions, and release packaging are stable enough to support a standalone learner book.

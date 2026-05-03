@@ -58,7 +58,7 @@ editorial_qa/         QA framework → 6-level scale, validation status taxonomy
 reference_manuals/    Final products → 5 reference documents (D14–D18)
 ```
 
-**The production database is `curriculum/fcn_master_lexicon_phase8_6_primer.sqlite`.**
+**The production database is `database/fcn_master_lexicon_phase8_6_primer.sqlite`.** If the binary is not present locally, fetch it from the S3 source-of-truth location documented in `database/README.md`.
 
 ---
 
@@ -76,6 +76,8 @@ reference_manuals/    Final products → 5 reference documents (D14–D18)
 | `editorial_qa/` | Editorial QA protocol (QA-0 through QA-5) and validation framework |
 | `reference_manuals/` | All final deliverables: Master Sourcebook (D14), Spoken Primer (D15), MSN Manual (D16), Poetic Manual (D17), Dictionary Manual (D18) |
 | `docs/` | Founding charter, register charter, mission statements, source hierarchy document |
+| `database/` | Preferred local home for the canonical source-of-truth SQLite database; binary DB files are fetched from S3 |
+| `reviewer_care_package/` | Small reviewer packet for validating the whole MSN system |
 | `workspace_msn/` | Scratch workspace — copy of Kaikki and Siméon data; canonical versions are in `source_data/` |
 
 ### Root-level data files
@@ -86,7 +88,7 @@ reference_manuals/    Final products → 5 reference documents (D14–D18)
 
 ## Reference manuals — important note
 
-The files in `reference_manuals/` are **editorial reference documents**. They are not the production data. They document the schema, pedagogy, and register conventions that govern the database in `curriculum/`. See `reference_manuals/README.md` for the full explanation.
+The files in `reference_manuals/` are **editorial reference documents**. They are not the production data. They document the schema, pedagogy, and register conventions that govern the source-of-truth database in `database/`. See `reference_manuals/README.md` for the full explanation.
 
 ---
 
@@ -131,7 +133,7 @@ for e in cuica_words:
 ```python
 import sqlite3
 
-conn = sqlite3.connect("curriculum/fcn_master_lexicon_phase8_6_primer.sqlite")
+conn = sqlite3.connect("database/fcn_master_lexicon_phase8_6_primer.sqlite")
 cur = conn.cursor()
 
 # How many entries?
@@ -265,7 +267,7 @@ Oversized SQLite databases are hosted outside Git at the normalized S3 database 
 https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/databases/
 ```
 
-See `DATABASE_ARTIFACTS.md` for SHA-256 checksums, local source paths, and upload instructions. The database URLs below are the canonical S3 targets for oversized DB artifacts. The canonical local database is `curriculum/fcn_master_lexicon_phase8_6_primer.sqlite`. Earlier phase databases are build snapshots.
+See `DATABASE_ARTIFACTS.md` for SHA-256 checksums, local source paths, and upload instructions. The database URLs below are the canonical S3 targets for oversized DB artifacts. The canonical local database is `database/fcn_master_lexicon_phase8_6_primer.sqlite`. Earlier phase databases are build snapshots.
 
 | File | Description | Link |
 |---|---|---|

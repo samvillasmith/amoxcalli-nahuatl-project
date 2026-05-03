@@ -2,7 +2,7 @@
 
 This checklist organizes the remaining work around the Founding Charter, Register Charter, existing deliverables D14-D18, and the new MSN authoring/book-production path.
 
-Last updated: 2026-04-30
+Last updated: 2026-05-03
 
 Status key:
 
@@ -26,17 +26,26 @@ Status key:
   - Sentence pattern templates: 10.
   - Genre plans: 4.
 
-- [~] First public demonstration text selected and review packet created, not public-ready.
+- [~] Demonstration drafting path exists, but it is not the validation target.
   - Selected path: children's book.
   - Working title: `A Day In The Milpa`.
-  - Current D19 review packet: 59 vocabulary rows, 7 sentence patterns, 22 glossary rows, 7 grammar decisions, 8 intentionally avoided/deferred terms, 12-page English source draft, and 12-line controlled MSN review draft.
-  - QA status: 6 PASS, 1 WARN, 1 BLOCKER. Public release remains blocked pending editorial and speaker/community validation of the 12 review-only lines.
+  - Current D19 packet: 59 vocabulary rows, 7 sentence patterns, 22 glossary rows, 7 grammar decisions, 8 intentionally avoided/deferred terms, 12-page English source draft, and controlled MSN draft evidence.
+  - Role: demonstration evidence only. It does not replace full MSN-system validation.
   - Other possible paths: cookbook, mindfulness chapbook, Tloque Nahuaque devotional/literary work.
 
 - [ ] Final capstone learner book planned.
   - Title: `Learn Modern Standard Nahuatl`.
-  - Role: final synthesis book after the grammar, lexicon, demonstration texts, QA, and release process are stable.
+  - Role: final synthesis book after the MSN system is validated for grammar, lexicon, examples, prose-writing, and poetic/literary use.
   - Plan file: `msn_system/learn_modern_standard_nahuatl_plan.md`.
+
+- [x] Whole-MSN reviewer care package created.
+  - Directory: `reviewer_care_package/`.
+  - Purpose: give reviewers a small packet that explains what MSN is, how it was built, what source of truth to use, and what decisions are needed.
+  - Scope: entire MSN standard: orthography, register, grammar, lexicon, examples, prose, poetry, and learner-book readiness.
+
+- [ ] Whole-MSN validation not yet complete.
+  - Needed decisions: orthography, register boundaries, core grammar, core lexicon/headwords, examples, prose/book-writing readiness, poetic/literary readiness, learner-book readiness.
+  - Output target: reviewer decisions that can promote, rewrite, reject, or mark evidence gaps before `Learn Modern Standard Nahuatl` is drafted as a public book.
 
 ## 1. Constitutional And Governance Layer
 
@@ -182,6 +191,14 @@ Status key:
 
 ## 7. Public Release And Product Layer
 
+- [x] Whole-MSN validation package complete
+  - Files: reviewer-facing methodology, source-of-truth note, validation request, worksheets, packet scope, target-book description, and reviewer index.
+  - Directory: `reviewer_care_package/`.
+
+- [ ] Whole-MSN external validation complete
+  - Needs: reviewer decisions across orthography, register boundaries, grammar, lexicon, example policy, prose/book-writing readiness, poetic/literary readiness, and learner-book readiness.
+  - Output: a signed-off decision log that separates approved material from rewrite/reject/needs-more-evidence material.
+
 - [ ] Searchable dictionary website complete
 
 - [ ] Public primer/product bundles complete
@@ -202,69 +219,53 @@ Status key:
 
 ## Immediate Work Order
 
-1. Choose the first demonstration book genre.
-   - Status: done.
-   - Selected: children's book, `A Day In The Milpa`.
+1. Send the whole-MSN reviewer care package.
+   - Directory: `reviewer_care_package/`.
+   - What reviewers are validating: the standard itself, not a small draft.
+   - Required response files: completed `VALIDATION_WORKSHEETS.md` or equivalent spreadsheet responses, plus any corrected forms/examples.
+   - Status: care package created; external review pending.
 
-2. Review the 41 `P1_primer_core_candidate` rows.
+2. Review the 41 `P1_primer_core_candidate` rows as part of whole-system validation.
    - Source file: `msn_system/exports/msn_core_candidates.csv`.
    - Output target: `approved_msn_core_seed.csv` or a decision table.
    - Rule: approval means "usable for controlled MSN drafting," not final community validation.
    - Status: provisional internal seed complete at `msn_system/exports/approved_msn_core_seed.csv`.
 
-3. Build the first genre vocabulary pack.
-   - If children's book: people, family, home, food, land/nature, simple actions, simple qualities.
-   - If cookbook: food, tools, actions, measures, sequence words, loanword policy.
-   - If mindfulness: body, breath, heart, calm, attention, gratitude, time.
-   - If devotional: divine names, praise verbs, reverence formulas, MSN_public/MSN_poetic boundary.
-   - Status: children-book pack created at `msn_system/d19_children_book/children_genre_vocab.csv`.
+3. Validate the core MSN grammar and example policy.
+   - Use D16 plus `reviewer_care_package/VALIDATION_WORKSHEETS.md`.
+   - Decide which sentence patterns, question forms, negation forms, possession forms, verb/person/aspect patterns, location patterns, and narrative connectors are public-teachable.
+   - Output target: approved/rewrite/reject decision log.
 
-4. Expand the sentence patterns for the selected genre.
-   - Start from `msn_system/exports/msn_sentence_patterns.csv`.
-   - Add genre-specific patterns only after vocabulary review.
-   - Status: 7 children-book patterns created at `msn_system/d19_children_book/children_sentence_patterns.csv`.
+4. Validate prose and book-writing readiness.
+   - Required genres to assess: short learner paragraphs, short book, cookbook/procedural writing, mindfulness/reflective prose, children's book/simple concrete prose, and devotional/literary writing.
+   - Output target: list of approved genres and blocked genres, with required safeguards.
 
-5. Draft the first short book in English or Spanish.
-   - Keep the source manuscript simple and controlled.
-   - Put missing vocabulary into an unresolved list instead of guessing.
-   - Status: English source draft created at `msn_system/d19_children_book/manuscript_source_en.md`.
+5. Validate poetic/literary readiness.
+   - Decide what belongs in MSN_neutral, MSN_public, and MSN_poetic.
+   - Add safeguards for Tloque Nahuaque devotional/literary material, classical citation, elevated diction, vocatives, and parallelism.
 
-6. Adapt the draft into controlled MSN.
-   - Use only approved or internal-drafting candidate forms.
-   - Mark anything proposed, classical, comparative, or uncertain.
-   - Status: slot scaffold and 12-line controlled MSN review draft created; public prose still pending D16 grammar review and speaker/community validation.
+6. Revise D16 and the authoring pack from reviewer decisions.
+   - Update grammar chapters, examples, lexicon status, unresolved terms, source/register notes, and QA gates.
+   - Keep rejected or uncertain items visibly marked.
 
-7. Create the book support files.
-   - Glossary.
-   - Source notes.
-   - Register note.
-   - Unresolved terms list.
-   - QA report.
-   - Status: internal support packet created with glossary seed, source/register notes, unresolved terms, QA checklist, and QA report.
+7. Build validated model texts.
+   - Possible paths: children's book, cookbook, mindfulness chapbook, or Tloque Nahuaque devotional/literary work.
+   - Rule: model texts come after system-level decisions, and every form must carry source/register/validation status.
 
-8. Resolve D19 QA warnings and blockers.
-   - Fix grammar review warnings for D19-GRAM-002 and D19-GRAM-005.
-   - Resolve or intentionally avoid 5 active unresolved/candidate-only terms.
-   - Record speaker/community review status.
-   - Add version, license/source note, and publication artifact plan.
-   - Status: planning and v0-scope items complete; QA improved to 6 PASS, 1 WARN, 1 BLOCKER.
-   - Remaining blocker: actual editorial and speaker/community validation of the 12 review-only lines.
-   - Remaining warning: final manuscript layout/export waits until linguistic approval.
-
-9. Complete the relevant D16 Phase B pieces.
+8. Complete the relevant D16 Phase B pieces.
    - Grammar chapters 7-9.
    - 20+ MSN examples.
    - Loanword policy.
    - 4-5 sample prose paragraphs.
 
-10. Revise into publication format.
+9. Revise into publication format.
    - Markdown first, then PDF/print format.
 
-11. Release the first demonstration text as D19.
+10. Release validated demonstration texts as D19 or later deliverables.
 
-12. Build the final capstone learner book.
+11. Build the final capstone learner book.
    - Title: `Learn Modern Standard Nahuatl`.
-   - Use D15 for learner sequencing, D16 for MSN grammar authority, D18 for glossary conventions, and D19 for model controlled prose.
+   - Use D15 for learner sequencing, D16 for MSN grammar authority, D18 for glossary conventions, validated model texts for reading passages, and the reviewer decision log for public-safe forms.
    - Status: planned as the end-of-process book.
 
 ## FCN v1.0 Completion Definition

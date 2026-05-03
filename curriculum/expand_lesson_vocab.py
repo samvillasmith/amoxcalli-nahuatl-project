@@ -13,7 +13,10 @@ import re
 import sqlite3
 from pathlib import Path
 
-DB = Path(__file__).parent / "fcn_master_lexicon_phase8_6_primer.sqlite"
+ROOT = Path(__file__).resolve().parents[1]
+CANONICAL_DB = ROOT / "database" / "fcn_master_lexicon_phase8_6_primer.sqlite"
+LEGACY_DB = Path(__file__).parent / "fcn_master_lexicon_phase8_6_primer.sqlite"
+DB = CANONICAL_DB if CANONICAL_DB.exists() else LEGACY_DB
 
 # Variety preference order for deduplication (lower index = preferred)
 VARIETY_RANK = {

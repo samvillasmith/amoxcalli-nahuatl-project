@@ -8,7 +8,7 @@ Status: planning and controlled-drafting scaffold. This is not public-ready MSN 
 
 ## Purpose
 
-Use the safest available MSN neutral drafting layer to create a short children-book manuscript. The book should prove that FCN can support concrete, readable, source-tracked prose without collapsing EHN, MSN neutral, and MSN-P.
+Use the safest available MSN neutral drafting layer to create a short children-book manuscript as internal evidence. This packet does not prove or validate the whole standard by itself; it shows where the current system can draft and where whole-MSN review must still decide grammar, vocabulary, register, and publication readiness.
 
 ## Files
 
@@ -17,7 +17,7 @@ Use the safest available MSN neutral drafting layer to create a short children-b
 - `book_glossary_seed.csv` - glossary rows actually used by the controlled draft.
 - `manuscript_source_en.md` - simple English planning manuscript.
 - `controlled_msn_draft_scaffold.md` - slot-based MSN draft scaffold, not final prose.
-- `controlled_msn_draft_v0_review.md` - first controlled MSN review draft.
+- `controlled_msn_draft_v0_review.md` - controlled MSN local draft evidence, not final prose.
 - `unresolved_terms.csv` - missing or risky terms to resolve before final translation.
 - `qa_checklist.md` - checks required before public release.
 - `qa_report_v0.md` - automated QA report for the current review packet.

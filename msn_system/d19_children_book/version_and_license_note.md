@@ -20,4 +20,4 @@ The controlled MSN draft uses the MSN authoring seed, the provisional internal c
 
 ## Release Rule
 
-Do not treat this packet as a final public book until D16 grammar review, speaker/community validation, final glossary review, source/register note approval, and layout/export QA are complete.
+Do not treat this packet as a final public book until whole-MSN validation, D16 grammar review, speaker/community validation, final glossary review, source/register note approval, and layout/export QA are complete.
