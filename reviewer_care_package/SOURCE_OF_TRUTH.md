@@ -14,6 +14,18 @@ Public S3 URL:
 https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/databases/fcn_master_lexicon_phase8_6_primer.sqlite
 ```
 
+GitHub reviewer packet:
+
+```text
+https://github.com/samvillasmith/amoxcalli-nahuatl-project/tree/main/reviewer_care_package
+```
+
+GitHub project repository:
+
+```text
+https://github.com/samvillasmith/amoxcalli-nahuatl-project
+```
+
 Current known checksum:
 
 ```text
@@ -25,7 +37,7 @@ This is the Phase 8.6 primer database. It is the production database for validat
 
 ## Key Human-Readable Documents
 
-Reviewers should use this care package first.
+Reviewers should use `START_HERE.md` first. It names the exact input, material to judge, and output expected.
 
 Supporting project documents:
 

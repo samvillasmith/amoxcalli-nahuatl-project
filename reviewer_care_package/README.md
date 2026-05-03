@@ -1,53 +1,63 @@
 # MSN Reviewer Care Package
 
-Thank you for reviewing this work.
+This folder is the reviewer-facing packet for validating **Modern Standard Nahuatl (MSN)**.
 
-This folder is intentionally small. It is the reviewer-facing packet for validating **Modern Standard Nahuatl**, or **MSN**, as a complete written system. Reviewers should not need to wade through the whole repository.
+Reviewers should not need to infer the assignment or wander through the repo. The packet is organized as:
+
+```text
+input for reviewer -> material to judge -> output for us
+```
+
+Start with `START_HERE.md`.
 
 ## What We Are Asking You To Validate
 
 The goal is to validate the **whole MSN system**:
 
+- the canonical MSN database
 - the writing standard
 - the register boundary between spoken EHN, MSN neutral, MSN public, MSN poetic, and classical citation
 - the core grammar choices
 - the core lexicon and headword choices
 - the example sentences
-- the ability to teach MSN to learners
-- the ability to use MSN to write prose, books, public texts, and poetry
+- learner-book readiness
+- prose/book-writing readiness
+- poetic/literary/devotional readiness
 
-## What This Package Contains
+## Required Reviewer Output
 
-1. `START_HERE.md`
-   - The shortest path through the packet and the exact output we need back.
+Return exactly these two completed files:
 
-2. `MASTER_METHODOLOGY.md`
-   - How the project got here, what sources were used, and how registers are separated.
+1. `REVIEW_OUTPUT_TEMPLATE.csv`
+   - item-by-item decisions
+   - corrected forms/rules/examples where needed
+   - required changes
 
-3. `SOURCE_OF_TRUTH.md`
-   - The canonical database and the documents that should be treated as authoritative for review.
+2. `REVIEW_SUMMARY_TEMPLATE.md`
+   - short overall judgment
+   - blocking issues
+   - whether the database can serve as source of truth
+   - whether **Learn Modern Standard Nahuatl** is ready to be drafted from this system
 
-4. `VALIDATION_REQUEST.md`
-   - The exact questions we are asking reviewers to answer.
+## Files In This Packet
 
-5. `LEARN_MODERN_STANDARD_NAHUATL_TARGET.md`
-   - The end goal: a book that teaches MSN well enough for someone to write prose, books, and poetry.
+| File | Purpose |
+|---|---|
+| `START_HERE.md` | The actual assignment: input, material to judge, expected output. |
+| `REVIEW_OUTPUT_TEMPLATE.csv` | Required decision-log template. Return this completed. |
+| `REVIEW_SUMMARY_TEMPLATE.md` | Required summary template. Return this completed. |
+| `REVIEW_QUERIES.sql` | SQL queries that pull the concrete database material reviewers should inspect. |
+| `SOURCE_OF_TRUTH.md` | Canonical database, checksum, S3 link, and supporting sources. |
+| `VALIDATION_REQUEST.md` | The review question in prose form. |
+| `MASTER_METHODOLOGY.md` | How the system was assembled. |
+| `LEARN_MODERN_STANDARD_NAHUATL_TARGET.md` | The final learner-book target. |
+| `PACKET_SCOPE.md` | What is and is not in scope. |
+| `VALIDATION_WORKSHEETS.md` | Compatibility note; no longer the main interface. |
+| `REVIEWER_INDEX.md` | Routing notes for different reviewer types. |
 
-6. `VALIDATION_WORKSHEETS.md`
-   - Focused worksheets for reviewers. These can be copied into a spreadsheet or filled in directly.
+## Decision Labels
 
-## Suggested Review Order
-
-1. Read `START_HERE.md`.
-2. Read `VALIDATION_REQUEST.md`.
-3. Read `MASTER_METHODOLOGY.md`.
-4. Check `SOURCE_OF_TRUTH.md`.
-5. Fill out the worksheets relevant to your expertise.
-6. Mark any item that should not be used publicly yet.
-
-## Review Outcomes
-
-For each item, please use one of these decisions:
+Use only these labels:
 
 - `approve`
 - `approve_with_note`
@@ -56,4 +66,4 @@ For each item, please use one of these decisions:
 - `needs_more_evidence`
 - `outside_my_expertise`
 
-Short notes are more useful than long essays. If something sounds wrong or unnatural, please give a better form when possible.
+If something sounds wrong or unnatural, give the better form when possible and put it in the `corrected_form_or_rule` column of `REVIEW_OUTPUT_TEMPLATE.csv`.

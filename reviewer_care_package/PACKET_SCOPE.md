@@ -4,6 +4,14 @@ This package validates **MSN as a system**.
 
 It is not a request to validate one isolated draft.
 
+The packet is a concrete review assignment:
+
+```text
+input for reviewer -> material to judge -> output for us
+```
+
+The exact assignment and return format are in `START_HERE.md`.
+
 ## In Scope
 
 - MSN neutral prose standard

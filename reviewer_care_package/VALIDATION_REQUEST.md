@@ -22,7 +22,7 @@ That book should teach someone enough MSN to:
 
 ## What Reviewers Should Judge
 
-Please review the system, not just isolated examples.
+Please review the system, not just isolated examples. Use the review IDs and materials listed in `START_HERE.md`.
 
 We need decisions on:
 
@@ -56,6 +56,15 @@ An item is valid only when it has:
 - notes for any limitation
 
 If something is useful but not yet public-ready, mark it as `approve_with_note` or `needs_more_evidence`.
+
+## Required Output
+
+Return:
+
+1. completed `REVIEW_OUTPUT_TEMPLATE.csv`
+2. completed `REVIEW_SUMMARY_TEMPLATE.md`
+
+Do not return only general comments. Every approval, concern, rewrite, or rejection should be tied to a review ID, file, database row/query, rule, or example.
 
 ## What We Do Not Want
 

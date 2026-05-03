@@ -1,69 +1,63 @@
 # Reviewer Index
 
-Use this index to decide which parts of the system to review.
+Everyone starts with:
 
-## For Nahuatl Speakers And Teachers
+```text
+START_HERE.md
+```
 
-Start with:
+Everyone returns:
 
-- `VALIDATION_REQUEST.md`
-- `VALIDATION_WORKSHEETS.md`
+```text
+REVIEW_OUTPUT_TEMPLATE.csv
+REVIEW_SUMMARY_TEMPLATE.md
+```
 
-Most important sections:
+Use this file only to decide which review IDs matter most for a given reviewer.
 
-- Register Review
-- Grammar Review
-- Lexicon Review
-- Example Sentence Review
-- Prose And Book-Writing Readiness
-- Poetry And Literary Readiness
+## Nahuatl Speakers And Teachers
 
-## For Linguists Or Editors
+Highest-priority review IDs:
 
-Start with:
+- `MSN-REG-001` register boundaries
+- `MSN-LEX-001` core headwords
+- `MSN-GRAM-001` basic sentence patterns
+- `MSN-GRAM-002` public teaching grammar
+- `MSN-EX-001` examples
+- `MSN-BOOK-001` learner-book readiness
 
-- `MASTER_METHODOLOGY.md`
-- `SOURCE_OF_TRUTH.md`
-- `VALIDATION_WORKSHEETS.md`
+## Linguists Or Editors
 
-Most important sections:
+Highest-priority review IDs:
 
-- Source Layers
-- Register System
-- Orthography Method
-- Lexicon Method
-- Grammar Method
+- `MSN-DB-001` database source of truth
+- `MSN-ORTH-001` orthography
+- `MSN-REG-001` register boundaries
+- `MSN-LEX-001` core headwords
+- `MSN-GRAM-001` sentence patterns
+- `MSN-GRAM-002` grammar manual readiness
 
-## For Curriculum Reviewers
+## Curriculum Reviewers
 
-Start with:
+Highest-priority review IDs:
 
-- `LEARN_MODERN_STANDARD_NAHUATL_TARGET.md`
-- `VALIDATION_WORKSHEETS.md`
+- `MSN-BOOK-001` learner-book readiness
+- `MSN-GRAM-001` basic sentence patterns
+- `MSN-EX-001` examples
+- `MSN-PROSE-001` prose/book-writing readiness
 
-Most important sections:
+## Poets, Writers, Or Cultural Reviewers
 
-- Learner Book Readiness
-- Example Sentence Review
-- Prose And Book-Writing Readiness
+Highest-priority review IDs:
 
-## For Poets, Writers, Or Cultural Reviewers
-
-Start with:
-
-- `VALIDATION_REQUEST.md`
-- `LEARN_MODERN_STANDARD_NAHUATL_TARGET.md`
-- `VALIDATION_WORKSHEETS.md`
-
-Most important sections:
-
-- Register Review
-- Poetry And Literary Readiness
-- Devotional/literary safeguards
+- `MSN-REG-001` register boundaries
+- `MSN-PROSE-001` prose/book-writing readiness
+- `MSN-POET-001` poetic/literary/devotional safeguards
+- `MSN-BOOK-001` learner-book readiness
 
 ## Time Estimates
 
-- 20 minutes: high-level judgment only
-- 1 hour: one worksheet section
-- 2-3 hours: full system review pass
-- ongoing: detailed line/example/headword validation
+- 20 minutes: fill only the overall decisions in `REVIEW_SUMMARY_TEMPLATE.md`
+- 1 hour: complete 3-5 review IDs in `REVIEW_OUTPUT_TEMPLATE.csv`
+- 2-3 hours: complete all review IDs at least once
+- longer: row-level database audit or full grammar/example audit
