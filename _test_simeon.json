@@ -1,0 +1,71 @@
+{
+  "_metadata": {
+    "title": "Siméon's Dictionnaire de la langue nahuatl (1885) — Parsed",
+    "source": "Rémi Siméon, Dictionnaire de la langue nahuatl ou mexicaine, Paris, 1885",
+    "original_sources": "Based on Molina (1571), Florentine Codex, and other colonial manuscripts",
+    "license": "PUBLIC DOMAIN (published 1885)",
+    "language_of_definitions": "French",
+    "ocr_quality": "Auto-OCR from archive.org scan. Contains errors. Use with scholarly judgment.",
+    "parser": "simeon_parser.py (for Sam Itzli / The Amoxtli Project)",
+    "stats": {
+      "total_entries": 28709,
+      "pos_distribution": {
+        "unknown": 7659,
+        "verb": 5888,
+        "noun": 5408,
+        "noun (verbal/derived)": 4357,
+        "adjective (verbal/derived)": 2545,
+        "adverb": 917,
+        "adjective": 810,
+        "frequentative": 610,
+        "verb (neutral/intransitive)": 213,
+        "postposition": 212,
+        "pronoun": 41,
+        "particle": 40,
+        "interjection": 6,
+        "preposition": 1,
+        "conjunction": 1,
+        "adjective/noun": 1
+      },
+      "entries_with_verb_conjugation": 3885,
+      "entries_with_root_analysis": 19150,
+      "entries_with_calendar_info": 22
+    },
+    "note": "Definitions are in French. For MSN work, cross-reference with Karttunen (English) and kaikki.org data."
+  },
+  "entries": [
+    {
+      "headword": "AACANA",
+      "definition_fr": "P. OAACAN, fréq. de acana : nitla ou mic — vanner, nettoyer avec soin, souvent une chose.",
+      "pos": "frequentative",
+      "is_verb": true
+    },
+    {
+      "headword": "AACATLA",
+      "definition_fr": "Champ de roseaux clair-semés. RR. a, acatla.",
+      "pos": "noun",
+      "roots": [
+        "acatla"
+      ]
+    },
+    {
+      "headword": "AACHTI",
+      "definition_fr": "P. OAACHTIC : mile — Être au service de quelqu'un, être son page, son valet. R. aachth.",
+      "pos": "verb",
+      "roots": [
+        "aachth"
+      ],
+      "is_verb": true
+    },
+    {
+      "headword": "AACHTLI",
+      "definition_fr": "de acurur. Serviteur, domestique, page, valet; par ext., bossu. En comp. teaach, page, serviteur de quelqu'un; teaach tilmatli, habit, livrée de page, de laquais, etc.",
+      "pos": "frequentative"
+    },
+    {
+      "headword": "AACI",
+      "definition_fr": "p. OAAGIC, fréq. de AG : n (pour ni) — at- teindre, toucher, approfondir une chose, parvenir à la savoir entièrement, complétement, la tenir, la posséder; fréquenter quelqu'un de distinction, vivre familièrement, mtimement avec lui; notech aaci, être atteint, être blessé; litt. (telle chose) me touche, me pique ou me blesse.",
+      "pos": "frequentative"
+    }
+  ]
+}

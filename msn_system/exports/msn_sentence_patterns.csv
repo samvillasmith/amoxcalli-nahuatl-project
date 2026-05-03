@@ -1,0 +1,11 @@
+pattern_id,register,domain,english_frame,msn_pattern,slots,evidence_status,review_note
+MSN-PAT-001,MSN_neutral,identity,This is [NOUN].,[DEICTIC] [NOUN].,"DEICTIC,NOUN",template_for_editorial_drafting,Use for children book captions and glossary-style prose.
+MSN-PAT-002,MSN_neutral,identity,[NOUN] is called [NAME/TERM].,[NOUN] [called] [TERM].,"NOUN,called,TERM",template_for_editorial_drafting,Exact verb choice must be checked against approved core.
+MSN-PAT-003,MSN_neutral,description,[NOUN] is [ADJECTIVE].,[NOUN] [ADJECTIVE].,"NOUN,ADJECTIVE",template_for_editorial_drafting,Useful for children book and cookbook descriptions.
+MSN-PAT-004,MSN_neutral,action,I/we [VERB].,[PERSON_PREFIX]-[VERB].,"PERSON_PREFIX,VERB",template_for_editorial_drafting,Verb stem and person marking require D16 grammar confirmation.
+MSN-PAT-005,MSN_neutral,sequence,"First [ACTION], then [ACTION].","[FIRST] [ACTION], [THEN/ALSO] [ACTION].","FIRST,ACTION,THEN",template_for_editorial_drafting,Based on D16 sequence examples; good for cookbook and mindfulness steps.
+MSN-PAT-006,MSN_neutral,instruction,Do [ACTION].,[IMPERATIVE] [ACTION].,"IMPERATIVE,ACTION",template_for_editorial_drafting,Use carefully; imperatives may feel more EHN/spoken depending context.
+MSN-PAT-007,MSN_neutral,location,[PERSON/THING] is in/at [PLACE].,[SUBJECT] [LOCATIVE] [PLACE].,"SUBJECT,LOCATIVE,PLACE",template_for_editorial_drafting,"Good for captions, cookbook context, and public prose."
+MSN-PAT-008,MSN_neutral,possession,My/our [NOUN].,[POSSESSIVE_PREFIX]-[NOUN_STEM].,"POSSESSIVE_PREFIX,NOUN_STEM",template_for_editorial_drafting,Requires D16 possession chapter completion before public use.
+MSN-PAT-009,MSN_neutral,definition,[TERM] means [GLOSS].,[TERM] [MEAN/CALL] [GLOSS].,"TERM,MEAN_OR_CALL,GLOSS",template_for_editorial_drafting,Useful for dictionary and glossary prose.
+MSN-PAT-010,MSN_public,devotional_public,Let us honor [DIVINE/VALUED NOUN].,[HORTATIVE] [HONOR_VERB] [OBJECT].,"HORTATIVE,HONOR_VERB,OBJECT",requires_register_review,Reserved for MSN_public/MSN_poetic devotional pack; do not use as neutral prose without review.

@@ -1,0 +1,32 @@
+{
+  "d19_path": "d19_children_book",
+  "book_type": "children_book",
+  "working_title": "A Day In The Milpa",
+  "register": "MSN_neutral",
+  "outputs": {
+    "children_genre_vocab.csv": 59,
+    "children_sentence_patterns.csv": 7,
+    "book_glossary_seed.csv": 22,
+    "grammar_decisions.csv": 7,
+    "controlled_msn_draft_v0_review.csv": 12,
+    "unresolved_terms.csv": 8,
+    "qa_report_v0.csv": 8,
+    "manuscript_source_en.md": 1,
+    "controlled_msn_draft_scaffold.md": 1,
+    "controlled_msn_draft_v0_review.md": 1,
+    "source_and_register_notes.md": 1,
+    "qa_checklist.md": 1,
+    "qa_report_v0.md": 1,
+    "version_and_license_note.md": 1,
+    "speaker_community_review_status.md": 1,
+    "publication_artifact_plan.md": 1
+  },
+  "qa_status_counts": {
+    "PASS": 6,
+    "WARN": 1,
+    "BLOCKER": 1
+  },
+  "status": "controlled_msn_review_packet_created",
+  "public_release_status": "blocked_pending_editorial_and_speaker_community_validation",
+  "next_step": "Promote or rewrite the 12 review-only lines through editorial and speaker/community validation."
+}

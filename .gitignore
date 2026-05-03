@@ -1,2 +1,9 @@
 fcn_ingest/data/wikimedia/enwiktionary-pages-articles/
 phase7_data/fcn_master_lexicon_phase7_review.sqlite.zip
+.env
+.claude/
+__pycache__/
+*.pyc
+*.sqlite-shm
+*.sqlite-wal
+fcn_master_lexicon_phase8_6_primer.sqlite

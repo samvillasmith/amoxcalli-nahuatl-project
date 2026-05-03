@@ -1,0 +1,23 @@
+msn_headword,pages,gloss_en,part_of_speech,ehn_spoken_form,children_domain,use_scope,entry_ids,source_confidence,review_note
+onka,"1,5,6,7,8,11",there is.,verb,onca,existence,internal_drafting_candidate,kw::onca::1,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+tonalli,1,a day,noun,tonalli,nature_time,internal_drafting_candidate,kw::tonalli::9,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+weyi,2,"big, great.",adj,hueyi,quality,internal_drafting_candidate,kw::hueyi::3,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+tonatih,2,sun.,noun,tonatih,nature_time,internal_drafting_candidate,kw::tonatih::2,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+pilkonetsi,"3,10,12",child,noun,pilconetzi,people,internal_drafting_candidate,kw::pilconetzi::1,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+itstok,"3,4",to be.,verb,itztoc,location_existence,approved_internal_seed,kw::itztoc::1,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+ipan,"3,4",in.,prep,ipan,relation,internal_drafting_candidate,kw::ipan::3,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+kalli,3,house.,noun,calli,home,internal_drafting_candidate,kw::calli::5,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+familia,"4,9",family,noun,familia,family,internal_drafting_candidate,kw::familia::1,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+milpa,4,cornfield.,noun,milpa,land_food,internal_drafting_candidate,kw::milpa::1,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+atl,5,water,noun,atl,food_water,approved_internal_seed,kw::atl::6,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+sintli,6,corncob,noun,cintli,food_land,approved_internal_seed,kw::cintli::3,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+etl,7,bean.,noun,etl,food,approved_internal_seed,kw::etl::4,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+chilli,7,chili pepper.,noun,chilli,food,approved_internal_seed,kw::chilli::3,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+achtowi,8,first.; before.,adj; adv,achtohui,sequence,approved_internal_seed,kw::achtohui::1; kw::achtohui::2,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+tekitl,8,work.,noun,tequitl,work,approved_internal_seed,kw::tequitl::2,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+wahka,9,then; at that time; next.,conj,huahca,sequence,approved_internal_seed,kw::huahca::1,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+tlakua,9,to eat.,verb,tlacua,action,internal_drafting_candidate,kw::tlacua::2,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+tlakualli,9,food.,noun,tlacualli,food,approved_internal_seed,kw::tlacualli::3,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+wika,10,to sing.,verb,huica,action,internal_drafting_candidate,kw::huica::3,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+tiotlak,11,evening,noun,tiotlac,nature_time,approved_internal_seed,kw::tiotlac::1,0.95,Glossary seed for review draft only; public glossary requires editorial approval.
+kochi,12,to sleep.,verb,cochi,action,approved_internal_seed,kw::cochi::3,0.95,Glossary seed for review draft only; public glossary requires editorial approval.

@@ -1,0 +1,13 @@
+page,source_line,controlled_msn_line,literal_backtranslation,sentence_patterns,grammar_decisions,status
+1,Morning comes.,Onka tonalli.,There is day.,CHILD-PAT-007,D19-GRAM-001,review_only_rewritten_to_avoid_unresolved_wake_come
+2,The sun is bright.,Weyi tonatih.,Big/great sun.,CHILD-PAT-005,D19-GRAM-005,review_only_bright_rewritten_as_big_great
+3,The child is at the house.,Pilkonetsi itstok ipan kalli.,The child is in the house.,CHILD-PAT-003,D19-GRAM-002,review_only_location_pattern
+4,The family goes to the milpa.,Familia itstok ipan milpa.,The family is in the milpa.,CHILD-PAT-003,D19-GRAM-002,review_only_rewritten_to_avoid_directional_go
+5,There is water.,Onka atl.,There is water.,CHILD-PAT-007,D19-GRAM-001,review_only
+6,There is corn.,Onka sintli.,There is corn.,CHILD-PAT-007,D19-GRAM-001,review_only_term_choice_sintli
+7,There are beans and chili.,Onka etl. Onka chilli.,There are beans. There is chili.,CHILD-PAT-007,D19-GRAM-001;D19-GRAM-007,review_only_split_to_avoid_coordination
+8,"First, the family works.",Achtowi onka tekitl.,"First, there is work.",CHILD-PAT-004;CHILD-PAT-007,D19-GRAM-001;D19-GRAM-004,review_only_rewritten_to_use_noun_tekitl
+9,"Then, the family eats food.",Wahka familia tlakua tlakualli.,Then the family eats food.,CHILD-PAT-004;CHILD-PAT-002,D19-GRAM-003;D19-GRAM-004,review_only_transitive_object_marking_to_review
+10,The child sings.,Pilkonetsi wika.,The child sings.,CHILD-PAT-002,D19-GRAM-003,review_only
+11,Evening comes.,Onka tiotlak.,There is evening.,CHILD-PAT-007,D19-GRAM-001,review_only_rewritten_to_avoid_unresolved_come
+12,The child sleeps.,Pilkonetsi kochi.,The child sleeps.,CHILD-PAT-002,D19-GRAM-003,review_only

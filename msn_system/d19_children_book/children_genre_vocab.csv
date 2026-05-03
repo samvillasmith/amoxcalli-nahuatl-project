@@ -1,0 +1,60 @@
+entry_id,msn_headword,ehn_spoken_form,part_of_speech,gloss_en,children_domain,use_scope,source_confidence,review_note
+kw::atli::2,atli,atli,verb,to drink water.,action,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::cochi::3,kochi,cochi,verb,to sleep.,action,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::huica::3,wika,huica,verb,to sing.,action,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::nehnemi::2,nehnemi,nehnemi,verb,to walk.,action,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::piya::1,piya,piya,verb,to have.,action,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tlacua::2,tlakua,tlacua,verb,to eat.,action,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::yahua::1,yawa,yahua,verb,to go.,action,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::chichi::5,chichi,chichi,noun,dog.,animal,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::ni::1,ni,ni,det,this.,deictic,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::ni::2,ni,ni,pron,this.,deictic,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::nopa::1,nopa,nopa,det,that.,deictic,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::onca::1,onka,onca,verb,there is.,existence,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::familia::1,familia,familia,noun,family,family,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::hueyinana::1,weyinana,hueyinana,noun,grandmother.,family,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::hueyitata::1,weyitata,hueyitata,noun,grandfather.,family,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::inana::1,inana,inana,noun,"his, her, its mother.",family,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::itata::1,itata,itata,noun,"his, her, its father.",family,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::chilli::3,chilli,chilli,noun,chili pepper.,food,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::etl::4,etl,etl,noun,bean.,food,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tixtli::1,tixtli,tixtli,noun,dough (food).,food,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tlacualiztli::1,tlakualistli,tlacualiztli,noun,food.,food,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tlacualli::3,tlakualli,tlacualli,noun,food.,food,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tlaxcalli::4,tlaxkalli,tlaxcalli,noun,tortilla.,food,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::cintli::3,sintli,cintli,noun,corncob,food_land,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::atl::6,atl,atl,noun,water,food_water,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::calli::5,kalli,calli,noun,house.,home,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tlitl::1,tlitl,tlitl,noun,fire.,household,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::milpa::1,milpa,milpa,noun,cornfield.,land_food,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::camanalli::2,kamanalli,camanalli,noun,word.,language,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tlahtolli::2,tlahtolli,tlahtolli,noun,word. language.,language,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::itztoc::1,itstok,itztoc,verb,to be.,location_existence,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tototl::6,tototl,tototl,noun,bird,nature,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::xochitl::5,xochitl,xochitl,noun,flower,nature,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tiotlac::1,tiotlak,tiotlac,noun,evening,nature_time,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tlayohua::1,tlayowa,tlayohua,noun,night.,nature_time,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tonalli::9,tonalli,tonalli,noun,a day,nature_time,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tonatih::2,tonatih,tonatih,noun,sun.,nature_time,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::okichpil::1,okichpil,okichpil,noun,boy,people,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::pilconetzi::1,pilkonetsi,pilconetzi,noun,child,people,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::siwapil::2,siwapil,siwapil,noun,girl.,people,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::na::2,na,na,pron,first person; I,person,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tohuanti::1,towanti,tohuanti,pron,first person; we,person,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::cualli::3,kualli,cualli,adj,good.,quality,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::cualli::4,kualli,cualli,adv,well.,quality,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::hueyi::3,weyi,hueyi,adj,"big, great.",quality,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::achi::3,achi,achi,det,a little.,quantity,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::nochi::1,nochi,nochi,det,all.,quantity,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::quentzi::1,kentsi,quentzi,adv,"little, not much.",quantity,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::campa::4,kampa,campa,adv,where,question,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tlen::2,tlen,tlen,adv,what,question,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::ipan::3,ipan,ipan,prep,in.,relation,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::escuela::1,eskuela,escuela,noun,school,school,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tlamachtihquetl::1,tlamachtihketl,tlamachtihquetl,noun,teacher.,school,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tlapohualiztli::2,tlapowalistli,tlapohualiztli,noun,lesson.,school,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::achtohui::1,achtowi,achtohui,adj,first.,sequence,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::achtohui::2,achtowi,achtohui,adv,before.,sequence,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::huahca::1,wahka,huahca,conj,then; at that time; next.,sequence,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::yeca::1,yeka,yeca,adv,then,sequence,internal_drafting_candidate,0.95,Use in scaffold only until genre QA confirms grammar and register.
+kw::tequitl::2,tekitl,tequitl,noun,work.,work,approved_internal_seed,0.95,Use in scaffold only until genre QA confirms grammar and register.

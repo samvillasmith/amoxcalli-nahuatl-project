@@ -1,0 +1,5 @@
+genre_id,book_type,recommended_register,difficulty,best_first,required_next_pack,notes
+GENRE-001,children_book,MSN_neutral with limited EHN dialogue,lowest,yes,children_core_vocab_and_caption_patterns,"Best proof of system: short sentences, repetition, primer-safe vocabulary."
+GENRE-002,cookbook,MSN_neutral,medium,possible,food_tools_measurements_sequence_policy,Needs loanword and measurement policy for modern kitchen terms.
+GENRE-003,mindfulness_chapbook,MSN_neutral or MSN_public,medium_high,after_children_or_food,body_breath_heart_attention_vocabulary,Needs abstract vocabulary controls and careful tone decisions.
+GENRE-004,tloque_nahuaque_devotional,MSN_public and MSN_poetic,highest,no,devotional_msn_p_source_and_theology_pack,"Requires classical citation policy, divine-name policy, and explicit register annotation."

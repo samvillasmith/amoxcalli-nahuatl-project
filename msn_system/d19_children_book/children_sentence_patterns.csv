@@ -1,0 +1,8 @@
+pattern_id,register,children_use,english_frame,msn_slot_frame,required_domains,status,note
+CHILD-PAT-001,MSN_neutral,caption,This is [NOUN].,[DEICTIC:this] [NOUN].,deictic + any concrete noun,slot_template_not_final_sentence,Good for picture labels. Confirm exact determiner/caption style before public release.
+CHILD-PAT-002,MSN_neutral,simple action,The child [VERB].,[CHILD] [VERB/STEM with required marking].,people + action,needs_D16_verb_pattern_confirmation,Do not finalize without verb/person marking review.
+CHILD-PAT-003,MSN_neutral,location,[NOUN] is in/at [PLACE].,[NOUN] [RELATION:ipan] [PLACE].,concrete noun + relation + place,slot_template_not_final_sentence,"Use for house, school, or milpa pages."
+CHILD-PAT-004,MSN_neutral,sequence,First [ACTION]. Then [ACTION].,[FIRST] [ACTION]. [THEN] [ACTION].,sequence + action,slot_template_not_final_sentence,Best pattern for page-to-page narrative.
+CHILD-PAT-005,MSN_neutral,description,[NOUN] is good/big/little.,[NOUN] [QUALITY].,noun + quality,slot_template_not_final_sentence,Useful for simple descriptive pages.
+CHILD-PAT-006,MSN_neutral,question,What is this?,[QUESTION:what] [DEICTIC:this]?,question + deictic,needs_D16_question_pattern_confirmation,Use as an interactive reader prompt after grammar review.
+CHILD-PAT-007,MSN_neutral,existence caption,There is/are [NOUN].,[EXISTENCE:onka] [NOUN].,existence + concrete noun,approved_internal_drafting_only,Internal drafting pattern for concrete picture-book captions; still requires public MSN review.

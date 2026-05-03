@@ -1,0 +1,48 @@
+{
+  "database": "curriculum\\fcn_master_lexicon_phase8_6_primer.sqlite",
+  "quick_check": "ok",
+  "outputs": {
+    "msn_core_candidates.csv": 683,
+    "msn_authoring_lexicon_seed.csv": 563,
+    "approved_msn_core_seed.csv": 41,
+    "msn_sentence_patterns.csv": 10,
+    "msn_genre_seed_plan.csv": 4
+  },
+  "core_by_priority": {
+    "P2_general_ehn_candidate": 561,
+    "P4_cleanup_not_for_authoring": 81,
+    "P1_primer_core_candidate": 41
+  },
+  "core_by_status": {
+    "candidate_internal_use": 602,
+    "needs_cleanup_or_special_review": 81
+  },
+  "core_by_pos": {
+    "noun": 474,
+    "adj": 50,
+    "adv": 44,
+    "verb": 41,
+    "pron": 20,
+    "num": 12,
+    "intj": 10,
+    "det": 8,
+    "prep": 7,
+    "suffix": 7,
+    "conj": 5,
+    "name": 3,
+    "particle": 2
+  },
+  "authoring_by_domain": {
+    "general_vocabulary": 371,
+    "function_and_structure": 83,
+    "primer_core": 40,
+    "actions": 37,
+    "daily_life": 24,
+    "special_review": 8
+  },
+  "genre_recommendation": "Start with GENRE-001 children_book unless user chooses otherwise.",
+  "notes": [
+    "This does not speaker-validate or publicly approve entries.",
+    "Proposed MSN headwords prefer orthography/ehn_to_msn_candidates.csv when available."
+  ]
+}

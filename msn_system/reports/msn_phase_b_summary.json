@@ -1,0 +1,38 @@
+{
+  "database": "curriculum\\fcn_master_lexicon_phase8_6_primer.sqlite",
+  "quick_check": "ok",
+  "outputs": {
+    "msn_inventory.csv": 37146,
+    "msn_review_queue.csv": 37146,
+    "msn_example_bank.csv": 7
+  },
+  "inventory_by_register": {
+    "Classical_citation": 33814,
+    "Comparative_only": 2649,
+    "EHN_colloquial": 683
+  },
+  "inventory_by_review_status": {
+    "needs_msn_review": 37146
+  },
+  "review_queue_by_priority": {
+    "P1": 28711,
+    "P2": 7752,
+    "P3": 683
+  },
+  "review_queue_by_reason": {
+    "missing_msn_headword;classical_citation_not_active_msn": 26805,
+    "classical_citation_not_active_msn;unreviewed": 5105,
+    "comparative_only;unreviewed": 2647,
+    "missing_msn_headword;classical_citation_not_active_msn;editorial_flag": 1904,
+    "unreviewed": 683,
+    "comparative_only;editorial_flag;unreviewed": 2
+  },
+  "examples_by_source_family": {
+    "register_conversion": 5,
+    "grammar_example_bank": 2
+  },
+  "notes": [
+    "Classical citation and comparative-only rows are flagged for review by design.",
+    "This phase does not mutate the production SQLite database."
+  ]
+}
