@@ -4,6 +4,8 @@ phase7_data/fcn_master_lexicon_phase7_review.sqlite.zip
 .claude/
 __pycache__/
 *.pyc
+*.db
+*.sqlite
+*.sqlite3
 *.sqlite-shm
 *.sqlite-wal
-fcn_master_lexicon_phase8_6_primer.sqlite
