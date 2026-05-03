@@ -89,7 +89,26 @@ Return exactly these two files.
 
 ### 1. `REVIEW_OUTPUT_TEMPLATE.csv`
 
-Fill one row for every issue or approval decision. Use one row per item.
+This is a findings log.
+
+Do **not** fill one row per source. Do **not** fill one row per whole review area.
+
+Fill one row per concrete thing you reviewed:
+
+- one database row
+- one headword
+- one spelling rule
+- one register label
+- one grammar rule
+- one sentence pattern
+- one example sentence
+- one prose/literary capability
+- one blocker
+- one sampled approval
+
+You may repeat the same review ID as many times as needed. For example, `MSN-LEX-001` may appear 50 times if you have 50 headword decisions.
+
+Use `REVIEW_OUTPUT_GUIDE.md` for column definitions and example rows.
 
 Required decisions:
 

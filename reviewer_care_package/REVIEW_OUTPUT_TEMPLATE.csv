@@ -1,12 +1,6 @@
-review_item_id,review_area,material_to_judge,location_or_link,decision,corrected_form_or_rule,required_change,reviewer_notes,reviewer_name,reviewer_role
-MSN-DB-001,source_of_truth,canonical_database,https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/databases/fcn_master_lexicon_phase8_6_primer.sqlite,,,,,,
-MSN-ORTH-001,orthography,msn_spelling_rules,orthography/ and reference_manuals/fcn_deliverable16_msn_manual.md,,,,,,
-MSN-REG-001,registers,register_boundaries,docs/register_charter_v0.1.md and reviewer_care_package/MASTER_METHODOLOGY.md,,,,,,
-MSN-LEX-001,lexicon,core_msn_headwords,msn_system/exports/msn_core_candidates.csv,,,,,,
-MSN-LEX-002,lexicon,authoring_lexicon_public_readiness,msn_system/exports/msn_authoring_lexicon_seed.csv,,,,,,
-MSN-GRAM-001,grammar,basic_sentence_patterns,msn_system/exports/msn_sentence_patterns.csv,,,,,,
-MSN-GRAM-002,grammar,grammar_manual_public_teaching_readiness,reference_manuals/fcn_deliverable16_msn_manual.md,,,,,,
-MSN-EX-001,examples,example_sentence_quality,msn_system/exports/msn_example_bank.csv,,,,,,
-MSN-PROSE-001,prose,prose_and_book_writing_readiness,msn_system/exports/msn_sentence_patterns.csv and msn_system/exports/msn_authoring_lexicon_seed.csv,,,,,,
-MSN-POET-001,poetry,poetic_literary_and_devotional_safeguards,reference_manuals/fcn_deliverable17_poetic_nahuatl_manual.md and poetic_register/,,,,,,
-MSN-BOOK-001,learner_book,learn_modern_standard_nahuatl_readiness,reviewer_care_package/LEARN_MODERN_STANDARD_NAHUATL_TARGET.md and msn_system/learn_modern_standard_nahuatl_plan.md,,,,,,
+finding_id,review_id,item_type,source_file_or_table,locator,item_under_review,current_value_or_claim,decision,severity,public_release_blocker,corrected_form_or_rule,evidence_or_reason,required_change,reviewer_notes,reviewer_name,reviewer_role,review_date
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,

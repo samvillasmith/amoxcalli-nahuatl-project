@@ -66,6 +66,8 @@ Return:
 
 Do not return only general comments. Every approval, concern, rewrite, or rejection should be tied to a review ID, file, database row/query, rule, or example.
 
+`REVIEW_OUTPUT_TEMPLATE.csv` is a findings log. Reviewers should add as many rows as needed. A row should represent one concrete finding, not one entire source or review category.
+
 ## What We Do Not Want
 
 Please do not silently normalize everything into classical Nahuatl.

@@ -44,7 +44,8 @@ Return exactly these two completed files:
 | File | Purpose |
 |---|---|
 | `START_HERE.md` | The actual assignment: input, material to judge, expected output. |
-| `REVIEW_OUTPUT_TEMPLATE.csv` | Required decision-log template. Return this completed. |
+| `REVIEW_OUTPUT_TEMPLATE.csv` | Required findings-log template. Return this completed with one row per concrete finding, not one row per source. |
+| `REVIEW_OUTPUT_GUIDE.md` | Column definitions and example rows for the findings log. |
 | `REVIEW_SUMMARY_TEMPLATE.md` | Required summary template. Return this completed. |
 | `REVIEW_QUERIES.sql` | SQL queries that pull the concrete database material reviewers should inspect. |
 | `SOURCE_OF_TRUTH.md` | Canonical database, checksum, S3 link, and supporting sources. |

@@ -13,6 +13,8 @@ REVIEW_OUTPUT_TEMPLATE.csv
 REVIEW_SUMMARY_TEMPLATE.md
 ```
 
+`REVIEW_OUTPUT_TEMPLATE.csv` is not one row per review ID. It is one row per specific finding. Repeat review IDs as many times as needed.
+
 Use this file only to decide which review IDs matter most for a given reviewer.
 
 ## Nahuatl Speakers And Teachers
