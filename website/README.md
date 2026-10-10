@@ -21,7 +21,7 @@ Search runs parameterized, time-limited read-only transactions. CloudFront suppl
 The setup was performed in the calling workspace, above this checkout. The exact skill at https://neon.com/.well-known/agent-skills/neon/SKILL.md was fetched and checked against the installed copy.
 
 1. Installed the global Neon CLI, version 8.3.5, and authenticated its `DEFAULT` profile using the user's completed browser sign-in.
-2. Installed eight project skills under `.agents/skills`: `neon`, `neon-ai-gateway`, `neon-auth`, `neon-functions`, `neon-object-storage`, `neon-postgres`, `neon-postgres-branches`, and `neon-postgres-egress-optimizer`.
+2. Installed eight project skills under `.agents/skills`: `neon`, `neon-ai-gateway`, `neon-auth`, `neon-functions`, `neon-object-storage`, `neon-postgres`, `neon-postgres-branches`, and `neon-postgres-egress-optimizer`. The installer also created `skills-lock.json` to record their sources and versions.
 3. Ran the requested `neon mcp -y`. The installer added the Neon MCP server to existing Claude Code, Codex, Cursor, GitHub Copilot CLI, and VS Code configurations and minted its MCP API key. Credential values are not included in this repository.
 4. Created `.neon` pointing to the supplied project and production branch. The current project name reported by Neon is `amoxcalli`; no project or branch was renamed.
 5. Created a private `.env.local` with `DATABASE_URL`, `DATABASE_URL_UNPOOLED`, and `NEON_BRANCH`. Added `AMOXCALLI_ORIGIN_SECRET` for the server-to-server search route, preserving existing values.
