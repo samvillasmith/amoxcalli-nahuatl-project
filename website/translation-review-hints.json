@@ -1,0 +1,90 @@
+{
+  "SM::000605": {
+    "source_text": "5. v. Soulien, protecteur d’une ville, d'un État, celui qui l'agrandit, le déve- loppe et en sert les intérêts. RR. altepetl, paleuia.",
+    "source_content_sha256": "a7b25643be7f05d494d19f38e91c72684fb4ef720cd5320780c48bc500b1c93a",
+    "hint": "The ordinary French word 'Soulien' is clear OCR for 'Soutien' in the phrase 'Soutien, protecteur d’une ville, d’un État'. Translate support/supporter and protector; do not add citizen/citoyen/ciudadano, which is absent from the source. '5. v.' is an OCR-damaged verbal-noun label. Translate all clauses about enlarging, developing, and serving the interests of the city or state. Preserve the Nahuatl roots altepetl and paleuia exactly."
+  },
+  "SM::000703": {
+    "source_text": "P. OAMAPATOUI : nite — Jouer aux : à (pour ni) — jouer v. Joueur de cartes. R. ama- cartes avec quelqu'un. RR. amatl, patouia.",
+    "source_content_sha256": "6ca671ae5f9ff279be39af5648f33c0e00ca4b1c49fb71334e5e9f8df87f1da9",
+    "hint": "French text is interleaved by OCR: 'Jouer aux ... cartes avec quelqu’un' concerns playing cards with someone, and 'Joueur de cartes' means a card player. Translate those ordinary French phrases rather than leaving 'cartes avec quelqu’un' untranslated. The incomplete root 'R. ama-' remains literally damaged; do not reconstruct it or infer an additional meaning. Retain the printed nite, à, ni and Nahuatl forms as morphology, and mark ambiguous intervening fragments as unclear instead of treating them as complete French syntax. Preserve every clearly readable source clause."
+  },
+  "SM::002258": {
+    "source_text": "P. OCATZAUAG OU OCATZAUE : mi — de- venir sale. Nino — se salir; au fig. mo-catzaua (Olm., il se pervertit, qui s’avilit. Mite — salir quelqu'un. Nila — salir, lacher, gâter une chose; tla-catzaua (Olm.), il détruit, ruine, avilit le pays.",
+    "source_content_sha256": "566367c67bce3c2cee0b2a9219da8de75748171a9819b70f892ace111b89993e",
+    "hint": "The first '(Olm.,' has no matching parenthesis at that point. It is a damaged citation marker, not a reason to keep the following French prose untranslated. Translate all ordinary French clauses about becoming dirty, dirtying oneself or someone, spoiling something, becoming debased, and destroying or ruining the country. 'se salir' is French 'to become dirty', not Spanish salir. In 'salir, lacher, gâter une chose', lacher may be OCR for tacher (stain); if uncertain mark only that word as unclear, without inventing a different sense. Keep both preterite forms, the printed mi/Nino/Mite/Nila prefixes, mo-catzaua, tla-catzaua and the author references as printed."
+  },
+  "SM::002886": {
+    "source_text": "P. OCEUI : itechpa in notequiuh, suspendre ses travaux, ses fonc- nino — se reposer; nino-ceuia tions. Mile — soulager quelqu'un, l'aider à porter un fardeau, consoler, faire miséricorde; contenir, Nila — refroidir une chose, éteindre (le feu, la lampe, etc.). Rév. calmer une personne irritée. ceuitzinoa. R. ceui.",
+    "source_content_sha256": "3ddea3ab45220ae6e7888979c15d6cb9493a0fc1435e8aaed2ef198135e81660",
+    "hint": "Translate the French explanatory clauses fully: 'se reposer'; 'suspendre ses travaux, ses fonctions'; 'soulager quelqu’un, l’aider à porter un fardeau, consoler, faire miséricorde'; 'refroidir une chose, éteindre le feu/la lampe'; and 'calmer une personne irritée'. The word fonctions is visibly split as 'fonc- ... tions' by interleaved morphology; those French pieces should not remain untranslated. Keep itechpa in notequiuh, nino-ceuia, ceuitzinoa and all printed prefixes and roots unchanged. Do not invent grammatical associations when the OCR order is uncertain; mark that specific connection as unclear."
+  },
+  "SM::005334": {
+    "source_text": "P. OYACATZAGUILI : mile où nitla — arrêter la foule, un troupeau, etc.; passer de- ni — aller devant, vant quelqu'un.",
+    "source_content_sha256": "2cb088aef45ceb5852cecfe37ce571f694c284bc0f1b9b80c536b7150607efdb",
+    "hint": "French 'devant quelqu’un' is split as 'de- ... vant quelqu’un', with 'ni — aller devant' interleaved. Translate the readable meanings of stopping a crowd/herd and going or passing in front of someone. Do not leave 'vant quelqu’un' untranslated or translate de- as a separate complete sense. In 'mile où nitla', où appears to be OCR for the alternative-form connector ou; render the alternatives with or/o while keeping mile, nitla, ni and OYACATZAGUILI literally as printed. If a grammatical connection is unclear, mark it rather than inventing it."
+  },
+  "SM::007124": {
+    "source_text": "p. OITZTIA : à (pour w) ou non — aller voir, chercher, regarder, considérer; can t-ttiuh ? (Par.), où vas-tu ? nowian non-itztiuh, aller voir par- tout, chercher, examiner avec soin; nixeuelcopauic n-itztiuh (Olm.), je regarde de côté, de mauvais œil; nouic üztiuh, tomber sur moi, en parlant du sort; ueca n-ilztiuh, éprouver un grand malheur; n-itztiuh in nic-chiua, agir de bon gré, savoir, considérer ce que l’on fait; aompa itztiuh (Olm.), il ne voit pas, va sans regarder, erre, tombe dans des piéges, dans le mal, etc. Mte êlre près de quelqu'un; ueca ou uecapa nite-ilztiuh, rester en arrière, marcher loin de quelqu'un, le suivre de loin; in ompa t-iütztin, là où nous irons voir, C'est-à-dire à l'avenir. R. itta.",
+    "source_content_sha256": "c7553ac1a4bfdd61b68dae490bebb616eca16cc0f381b5ecdf9358c528f04c30",
+    "hint": "'Mte êlre près de quelqu’un' contains ordinary French 'être près de quelqu’un'; êlre is clear OCR for être. Translate the meaning 'be near someone', retaining Mte as the damaged printed morphology. At the beginning, à, w, and non appear within damaged person/prefix notation before the dash: keep those glyphs as notation rather than interpreting non as ordinary French negation or inventing a corrected Nahuatl prefix. Translate every other readable explanation and example gloss. Preserve all Nahuatl example strings, including non-itztiuh, n-itztiuh, n-ilztiuh, üztiuh and t-iütztin, exactly; do not repair their spelling."
+  },
+  "SM::007544": {
+    "source_text": "P. OIXPOYAUH : ébloui. Mite cir, effacer, faire disparaitre une chose. RR. exth, n (pour ni) — être éblouir quelqu'un. Mila — obscur- poyaua.",
+    "source_content_sha256": "c2862d13b0080e666726a6720dc2a21c69729c0ada4f4cb36d79035d6512f368",
+    "hint": "French obscurcir is split by OCR as 'obscur- ... cir', while Nahuatl morphology and roots are interleaved. Translate the clearly readable meanings about being dazzled, dazzling someone, obscuring/darkening, erasing, and making something disappear. Do not leave 'être éblouir quelqu’un' or 'obscur-' untranslated. Preserve OIXPOYAUH, exth, n, ni, Mite, Mila and poyaua as printed; do not silently replace them with reconstructed forms. Where the OCR prevents assigning a phrase to a particular prefix, mark that connection as unclear instead of inventing the grammar."
+  },
+  "SM::007742": {
+    "source_text": "p. OIXTLAMACHTI truire, élever, enseigner quelqu'un. RR. ixthi, a : nite — ins- machtia.",
+    "source_content_sha256": "693998f5b46baa6a81a5f4d383dd1a11d1d9b68c21c4c8946fef2677c2fcc58d",
+    "hint": "The French verb instruire is split as 'ins- ... truire' by OCR and interleaved Nahuatl notation. The clearly readable French sequence concerns instructing, bringing up, and teaching someone. Translate that meaning fully, without leaving 'truire' untranslated or treating it as a Nahuatl root. Preserve OIXTLAMACHTI, ixthi, a, nite and machtia exactly as printed. Do not repair ixthi into a different spelling. Mark an uncertain grammatical connection as unclear, without adding a new lexical sense."
+  },
+  "kw::acaxitl::2": {
+    "source_text": "trough",
+    "source_content_sha256": "a5ffea394910330a409d1a9e5ed785a0051f369209eb3637e57614fe578387eb",
+    "hint": "The English noun trough should be translated with a real Spanish container term such as artesa or abrevadero, according to the source's breadth; trog and trogo are not valid Spanish translations. French auge is appropriate and is feminine. Do not invent an animal species, material, or purpose absent from the one-word source."
+  },
+  "kw::acaxtontli::1": {
+    "source_text": "diminutive of ācaxitl; a trough, a small pool or tank.",
+    "source_content_sha256": "a3ac0d229ebcc8583407ebd0266fc356747b1e68122c14111c10af50540a3b0f",
+    "hint": "Keep the reference form ācaxitl exactly, including its macron. French auge is feminine: une auge. Spanish trough/container can be una artesa or un abrevadero; do not use the invented trogo/trog. Translate all three source alternatives: a trough, a small pool, or a tank. Do not automatically turn an unspecified pool into a swimming pool; use a general basin/pool term at the breadth of the source. Use the standard French grammatical label diminutif, not diminuatif. Preserve the rest of the supplied definition, including its pond/tank senses."
+  },
+  "kw::acatl::2": {
+    "source_text": "The thirteenth day sign of the Aztec tōnalpōhualli.",
+    "source_content_sha256": "ce64d7f717e2b532f0d67c12d8d39ac4da31c31aa7cf127b63270cb3d2d7569c",
+    "hint": "Keep the Nahuatl calendar name tōnalpōhualli exactly with its two macrons; do not replace them with circumflexes or remove them. Translate the complete source meaning: the thirteenth day sign in the Aztec calendar named tōnalpōhualli. Do not change the ordinal, invent another calendar, or normalize the Nahuatl spelling. For Spanish thirteenth, use the ordinal decimotercero or 13.º rather than fractional treceavo. French should express a day sign of the calendar, not identify the Aztec people themselves as tōnalpōhualli."
+  },
+  "kw::acatzanatl::1": {
+    "source_text": "acazanate",
+    "source_content_sha256": "591fefa56227f7ccc7d3788e13c88f02de761480608cc8acb7781252578d6abc",
+    "hint": "The source contains only the lexical name acazanate. Retain that exact name, including its final e, rather than constructing acazanat. Do not supply a bird species or other explanatory meaning absent from the source; the source does not identify one. This is preservation of the source's name, not a newly inferred definition."
+  },
+  "kw::acatzanatl::2": {
+    "source_text": "acazanate.",
+    "source_content_sha256": "c6bd901539b408a3231cc5e5e6c1c0374ce7c6e5630c18bb2621ddf4bca470fb",
+    "hint": "The source contains only the lexical name acazanate followed by a period. Retain the exact name acazanate, including its final e, rather than constructing acazanat. Do not supply a bird species or other explanatory meaning absent from the source; the source does not identify one. Preserve the final punctuation."
+  },
+  "SM::008162": {
+    "source_text": "p. OMAgATIC : ni — se transformer en nino — jouer des Étrille. RR. animal, R. maçatl.",
+    "source_content_sha256": "a291a26102985d02af5d37c9819ceab77b92ea60c543ae1c779719f516e82f5e",
+    "hint": "The OCR interleaves French fragments and Nahuatl notation. The readable French phrase 'se transformer en ... animal' concerns transforming into an animal; do not infer a more specific animal from the root. The incomplete 'nino — jouer des ...' does not identify cards: do not invent playing cards/cartas because no such word appears in this source. Étrille is an ordinary French noun for a currycomb, but its relationship to the surrounding entry is uncertain; preserve it as a translated source fragment and mark the uncertain connection, or the incomplete playing phrase, as unclear. Keep OMAgATIC, ni, nino and maçatl exactly as printed. The word animal is ordinary French explanatory text even though damaged OCR placed it after RR.; do not claim it is an authoritative Nahuatl root."
+  },
+  "SM::019824": {
+    "source_text": "OU OTLACAMACHITI : minote — obéir à Sarbacane. RR. tlacallotl, quelqu'un ; oc cenca ticmo-tlacamachitiz, tu lui obéiras davantage. R. lacamati.",
+    "source_content_sha256": "c8e9c2e86752424b1f046cbbde93e3729160c5f4aa8013f7f5e877929d0bf696",
+    "hint": "Translate the ordinary French 'obéir à ... quelqu’un' as obeying someone, and the example gloss 'tu lui obéiras davantage' as 'you will obey him more'. Preserve the alternative form OTLACAMACHITI, minote, the example oc cenca ticmo-tlacamachitiz and the printed roots tlacallotl and lacamati exactly. The French noun Sarbacane (blowpipe) and its RR. fragment are interleaved into the middle of the obedience phrase by damaged OCR; do not combine them into an invented meaning such as obeying a blowpipe. Retain that source fragment with an explicit uncertainty marker if its association cannot be determined. Translate every readable French clause rather than copying the whole source into English. The readable obedience clause must say obey someone/obedecer a alguien. Put the displaced blowpipe/root fragment in a separate [unclear in source] note; never write obey Sarbacane/obedecer a Sarbacane.",
+    "unprotect": [
+      "quelqu"
+    ]
+  },
+  "kw::acaltetepon::1": {
+    "source_text": "Mexican beaded lizard (Heloderma horridum).",
+    "source_content_sha256": "469f118e4c4b2b7a2db11fd7a9d8fd0436d87744c62175a79ed3e48a981fbdaa",
+    "hint": "Translate Mexican beaded lizard at its stated zoological meaning: French lézard perlé mexicain and Spanish lagarto enchaquirado mexicano (also lagarto de chaquira). Do not substitute collared lizard/lézard à collier/lagarto de collar: beaded describes a different common name. Preserve Heloderma horridum exactly if it occurs in this source, and do not add a scientific name to a source that does not contain one. The source meaning is supported by Zoo Antwerpen's French species sheet, which pairs lézard perlé with Heloderma horridum (https://www.zooantwerpen.be/files/preview/korsthagedis2-fr-989f291b5a.pdf/), and PROFEPA's Spanish species name lagarto enchaquirado/lagarto de chaquira (https://www.gob.mx/profepa/prensa/asegura-profepa-ejemplar-de-lagarto-enchaquirado-o-de-chaquira-heloderma-horridum-en-durango). These references clarify translation of the existing meaning; do not import their additional factual claims into the definition. Translate only the supplied common-name wording; do not add a scientific name or extra aliases unless they occur in the exact source text."
+  },
+  "kw::acaltetepontli::1": {
+    "source_text": "Mexican beaded lizard.",
+    "source_content_sha256": "bfaf581d6b339e7deaddb4277d03b39f2a8751db7a6238ed272d2b87529c2ce9",
+    "hint": "Translate Mexican beaded lizard at its stated zoological meaning: French lézard perlé mexicain and Spanish lagarto enchaquirado mexicano (also lagarto de chaquira). Do not substitute collared lizard/lézard à collier/lagarto de collar: beaded describes a different common name. Preserve Heloderma horridum exactly if it occurs in this source, and do not add a scientific name to a source that does not contain one. The source meaning is supported by Zoo Antwerpen's French species sheet, which pairs lézard perlé with Heloderma horridum (https://www.zooantwerpen.be/files/preview/korsthagedis2-fr-989f291b5a.pdf/), and PROFEPA's Spanish species name lagarto enchaquirado/lagarto de chaquira (https://www.gob.mx/profepa/prensa/asegura-profepa-ejemplar-de-lagarto-enchaquirado-o-de-chaquira-heloderma-horridum-en-durango). These references clarify translation of the existing meaning; do not import their additional factual claims into the definition. Translate only the supplied common-name wording; do not add a scientific name or extra aliases unless they occur in the exact source text."
+  }
+}

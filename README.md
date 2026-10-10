@@ -1,6 +1,6 @@
 # Flor y Canto Nahuatl (FCN)
 
-An open, searchable Nahuatl lexical archive: 37,146 dictionary entries, including 28,709 parsed from Rémi Siméon's 1885 dictionary, with original definitions, spellings, variants, and source references retained. The curriculum, proposed written standards, and reference manuals continue as a separate area of the project.
+An open, searchable Nahuatl lexical archive: 37,146 dictionary entries, including 28,709 parsed from Rémi Siméon's 1885 dictionary, with English, Spanish, and French reading versions. Original definitions, spellings, variants, and source references are retained. Machine translations are labeled and source gaps are identified. The curriculum, proposed written standards, and reference manuals continue as a separate area of the project.
 
 **[Search the lexicon](https://amoxcalli.org/)** · **[Explore the MSN project](https://amoxcalli.org/msn/)** · [Website source and deployment notes](website/README.md)
 
@@ -289,7 +289,7 @@ See `DATABASE_ARTIFACTS.md` for SHA-256 checksums, local source paths, and uploa
 
 ## Limitations
 
-**Siméon definitions are in French.** English and Spanish translations are on the roadmap.
+**Siméon's original definitions are in French.** The [public lexicon](https://amoxcalli.org/#lexicon) offers English, Spanish, and French reading versions with a language selector and searches meanings in all three languages. Machine translations remain unreviewed and can be compared with the source text. The [translation standards](website/TRANSLATION_NOTES.md) explain preservation checks and source gaps.
 
 **OCR source material.** Siméon and Molina texts were auto-OCR'd from 19th-century scans. They contain errors. Use with judgment; corrections are welcome as pull requests.
 
@@ -299,8 +299,9 @@ See `DATABASE_ARTIFACTS.md` for SHA-256 checksums, local source paths, and uploa
 
 ## Roadmap
 
-- [ ] English translations of Siméon definitions
-- [ ] Spanish translations of Siméon definitions
+- [x] English translations of every usable Siméon definition
+- [x] Spanish translations of every usable Siméon and Kaikki definition
+- [x] French translations of Kaikki definitions and a three-language website selector
 - [ ] Parse Molina 1571 *Vocabulario* (~23,000 additional entries)
 - [ ] OCR error corrections in Siméon source
 - [ ] Cross-variety lemma alignment (Classical ↔ Central ↔ Huasteca)

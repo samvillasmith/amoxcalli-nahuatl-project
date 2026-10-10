@@ -13,3 +13,7 @@ database/lexicon-search.jsonl
 .deployment-state/
 .env*
 node_modules/
+.translation-state/
+database/lexicon-translations.jsonl
+database/lexicon-translations-*.jsonl.gz
+database/lexicon-translations-*.manifest.json

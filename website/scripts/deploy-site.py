@@ -226,11 +226,22 @@ def distribution_with_api(previous: dict, domain: str, origin_path: str, secret:
         raise DeploymentError("The distribution has duplicate lexicon origin IDs.")
     origin = deepcopy(origins[matching[0]]) if matching else {}
     origin.update({"Id": ORIGIN_ID, "DomainName": domain, "OriginPath": origin_path})
-    for incompatible in ("S3OriginConfig", "VpcOriginConfig", "OriginAccessControlId"):
+    for incompatible in ("S3OriginConfig", "VpcOriginConfig"):
         origin.pop(incompatible, None)
-    headers = [header for header in origin.get("CustomHeaders", {}).get("Items", [])
-               if header["HeaderName"].lower() != "x-secret"]
-    headers.append({"HeaderName": "X-Secret", "HeaderValue": secret})
+    # AWS returns an empty access-control ID for custom origins. Retain that
+    # serialized default; clear only a real incompatible access-control binding.
+    if origin.get("OriginAccessControlId"):
+        origin["OriginAccessControlId"] = ""
+    headers = deepcopy(origin.get("CustomHeaders", {}).get("Items", []))
+    secret_headers = [header for header in headers if header["HeaderName"].lower() == "x-secret"]
+    if len(secret_headers) > 1:
+        raise DeploymentError("The API origin has duplicate private-header names.")
+    if secret_headers:
+        # Header names are case-insensitive. Keep AWS's casing and list position,
+        # including when applying an intentional credential rotation.
+        secret_headers[0]["HeaderValue"] = secret
+    else:
+        headers.append({"HeaderName": "X-Secret", "HeaderValue": secret})
     origin["CustomHeaders"] = {"Quantity": len(headers), "Items": headers}
     origin.setdefault("CustomOriginConfig", {}).update({
         "HTTPPort": 80, "HTTPSPort": 443, "OriginProtocolPolicy": "https-only",
@@ -259,13 +270,20 @@ def distribution_with_api(previous: dict, domain: str, origin_path: str, secret:
         "FieldLevelEncryptionId": "",
         "SmoothStreaming": False,
     }
+    desired_methods = ["GET", "HEAD", "OPTIONS"]
+    allowed = deepcopy(behavior.get("AllowedMethods", {}))
+    cached = allowed.setdefault("CachedMethods", {})
+    for methods in (allowed, cached):
+        existing = methods.get("Items", [])
+        # CloudFront canonicalizes method order. Ordering has no effect on
+        # permissions or caching, so reuse an already-equivalent AWS list.
+        if len(existing) != len(desired_methods) or set(existing) != set(desired_methods):
+            methods["Items"] = desired_methods.copy()
+        methods["Quantity"] = len(desired_methods)
     behavior.update({
         "PathPattern": "api/*", "TargetOriginId": ORIGIN_ID,
         "ViewerProtocolPolicy": "redirect-to-https", "Compress": True,
-        "AllowedMethods": {
-            "Quantity": 3, "Items": ["GET", "HEAD", "OPTIONS"],
-            "CachedMethods": {"Quantity": 3, "Items": ["GET", "HEAD", "OPTIONS"]},
-        },
+        "AllowedMethods": allowed,
         "CachePolicyId": cache_id, "OriginRequestPolicyId": request_id,
     })
     for legacy in ("ForwardedValues", "MinTTL", "DefaultTTL", "MaxTTL"):

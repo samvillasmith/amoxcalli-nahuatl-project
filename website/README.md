@@ -2,7 +2,7 @@
 
 The public homepage at https://amoxcalli.org centers the open lexical archive. It searches 37,146 source records: 28,709 entries parsed from Rémi Siméon's 1885 dictionary and 8,437 unique Wiktionary/Kaikki records. The original homepage, all MSN sections, bilingual copy, document viewer, and six supporting documents remain at https://amoxcalli.org/msn/.
 
-Original spellings and French definitions are retained, alongside available English source glosses, variants, roots, source references, and review status. Search folds case and accents without changing the displayed text. Entries are not deduplicated by headword. The archive retains OCR and parsing imperfections; no machine translations are presented as originals.
+Original spellings and source definitions are retained, alongside full English, Spanish, and French definitions, variants, roots, source references, and review status. A language selector changes every result and full entry, persists the reader's choice, and includes it in shared URLs. Search covers all three definition languages and folds case and accents without changing the displayed text. Entries are not deduplicated by headword. Machine translations are labeled as unreviewed; source gaps and unreadable scan fragments are identified separately.
 
 The site describes this project's open, structured corpus without claiming that Siméon was first digitized here. Earlier electronic editions include Alexis Wimmer's 2004 dictionary and UNAM's Gran Diccionario Náhuatl. The original scan is credited to its existing Internet Archive source.
 
@@ -11,7 +11,7 @@ The site describes this project's open, structured corpus without claiming that 
 - Static website: existing S3 bucket `fcn-nahuatl-website` and CloudFront distribution `E1XNT9YCJ5QMJJ`.
 - Database: supplied Neon project `wandering-darkness-49205760`, production branch `br-broad-dawn-b5l34egl`, region `aws-us-east-2`.
 - Search: Neon Function `lexiconsearch`, reached through the existing site's `/api/search` CloudFront behavior.
-- Data tables: `amoxcalli.lexicon_entries`, `amoxcalli.sources`, and `amoxcalli.import_metadata`. Existing tables outside this schema are untouched.
+- Data tables: `amoxcalli.lexicon_entries`, `amoxcalli.entry_translations`, `amoxcalli.sources`, and `amoxcalli.import_metadata`. Existing tables outside this schema are untouched.
 - Public database download: the existing verified SQLite release remains in S3.
 
 Search runs parameterized, time-limited read-only transactions. CloudFront supplies the private origin credential; browsers receive no database connection string or origin credential. AWS managed policies forward query strings and disable edge caching for the API, preserving the existing Free hosting plan. Secrets and generated corpus exports are excluded from Git and website uploads.
@@ -64,3 +64,32 @@ After reviewing the dry run, omit `--dry-run` to publish. The script uploads onl
 ## Verification
 
 Validated archive integrity and exact source counts; all original entry records and payloads; case and accent folding; headword and French/English definition search; source filters; pagination; empty states; invalid parameters; and private origin enforcement. Browser checks cover full Siméon definitions, provenance, the separate MSN site, and mobile layout. Public deployment checks verify the corpus and both source filters through the site's own API.
+
+## Three-language definitions
+
+The [complete trilingual JSONL archive](https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/translations/lexicon-translations-2026-10-10.jsonl.gz) and its [checksum manifest](https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/translations/lexicon-translations-2026-10-10.manifest.json) provide an independent offline copy of the reading versions, originals, and provenance.
+
+The translation release contains all 111,438 entry/language cells: 37,146 each in French, English, and Spanish. It preserves 37,085 nonempty original definitions exactly, adds 73,854 machine translations, and records 183 missing-source cells plus 316 notices for source text consisting only of punctuation or numbers. The latter 499 cells represent 61 absent definitions and 158 unreadable source records; they are not counted as successful translations.
+
+Translations are held separately from archival records. Every cell is tied to the source archive fingerprint and the SHA-256 of its exact original definition. Provider, model, generation time, and unreviewed status remain available in the API. An expandable source transcription allows comparison even for unreadable fragments. The original SQLite release remains unchanged.
+
+Install the translation tools and run from this checkout:
+
+```powershell
+python -m pip install -r website/scripts/translation-requirements.txt
+# Supply OPENAI_API_KEY through the private environment.
+python website/scripts/translate-lexicon.py --plan
+python website/scripts/translate-lexicon.py --concurrency 20 --rpm 120
+node website/scripts/import-translations.mjs --file database/lexicon-translations.jsonl --env ..\.env.local --validate-only
+node website/scripts/import-translations.mjs --file database/lexicon-translations.jsonl --env ..\.env.local
+```
+
+The translator prefers the pinned `gpt-5.4-mini-2026-03-17` model with low reasoning effort and a versioned prompt, sends public dictionary text, and stores completed batches durably in ignored `.translation-state/checkpoint.sqlite`. When existing OpenAI prepaid credits were exhausted, the remaining work used the already authorized and enabled `openai.gpt-oss-120b-1:0` model through the existing AWS account. The fallback preserves completed work and records its actual provider and model per cell; it does not change Neon services or account agreements. Use `--provider bedrock --concurrency 12 --rpm 90` to resume through that existing AWS model.
+
+The translator masks roots, preterites, cross-reference targets, author citations, and recognized Nahuatl prefixes before translation and restores those exact source spans afterward. It requests both target languages together, verifies exact IDs and target languages, nonempty output, complete responses, protected spans, and possible truncation, and retries failed batches without storing blanks. OpenAI uses strict structured output; Bedrock forces a structured tool response and validates it before saving. Repeated source text shares a validated translation. Restarts request only missing work. A $20 cumulative estimated ceiling bounds new calls using the documented standard rates of the selected provider; actual token usage and estimated cost remain in the private checkpoint. No Neon plan change or AI Gateway activation is required.
+
+For a pilot, use `--limit 100 --allow-partial --output .translation-state/pilot.jsonl`; `--source-language en` exercises Kaikki's English source. Partial output is for an isolated preview branch only. Source-bound editorial context in `translation-review-hints.json` can be applied with `--review-hints website/translation-review-hints.json`; each hint must match the exact original text and hash. This reruns only the flagged definitions and retains their unreviewed machine status.
+
+The production importer refuses incomplete coverage, unknown IDs, altered originals, mismatched hashes, fabricated source gaps, missing provenance, or a changed file during import. All updates use one transaction within `amoxcalli`; it builds a separate full-text index for the translated definitions. The new API must be deployed after the complete translation import.
+
+Prepare the offline release with `python website/scripts/publish-translations.py`. It independently validates all cells against the unchanged SQLite archive, creates a deterministic gzip and checksum manifest, and makes no AWS changes by default. Add `--publish` to upload the complete validated release to the existing public bucket. The original SQLite key is preserved.

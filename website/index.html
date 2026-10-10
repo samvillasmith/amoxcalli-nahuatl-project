@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f2e9">
   <title>Amoxcalli — The Classical Nahuatl Lexicon</title>
-  <meta name="description" content="Explore 37,146 Nahuatl lexicon entries, including 28,709 entries digitized from Rémi Siméon's dictionary. Search original definitions, spellings, and source references.">
+  <meta name="description" content="Explore 37,146 Nahuatl lexicon entries with English, Spanish, and French definitions. Search Rémi Siméon's dictionary, original spellings, and source references.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles.css?v=20261010-2">
+  <link rel="stylesheet" href="/assets/styles.css?v=20261010-3">
   <script src="/assets/config.js" defer></script>
-  <script src="/assets/search.js" defer></script>
+  <script src="/assets/search.js?v=20261010-3" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#lexicon">Skip to the lexicon</a>
@@ -35,7 +35,7 @@
         <p class="eyebrow"><span class="small-rule"></span> An open lexical archive</p>
         <h1 id="page-title">Classical Nahuatl,<br><em>open to explore.</em></h1>
         <p class="intro-description">A digitized lexicon rooted in Rémi Siméon’s 1885 dictionary. Find a word, follow its meanings, and return to the source.</p>
-        <p class="intro-note">Original spellings. Full definitions. Free to search and download.</p>
+        <p class="intro-note">English, Spanish, and French definitions. Original spellings. Free to explore.</p>
       </div>
       <div class="archive-note" aria-label="About the collection">
         <span class="archive-number">01 / The collection</span>
@@ -66,8 +66,15 @@
               <label><input type="radio" name="source" value="simeon"><span>Siméon <small>28,709</small></span></label>
               <label><input type="radio" name="source" value="kaikki"><span>Wiktionary / Kaikki <small>8,437</small></span></label>
             </fieldset>
-            <p id="search-help">Search the original French and English definitions.</p>
+            <fieldset class="language-filter" id="language-filter" aria-describedby="language-help">
+              <legend>Definition language</legend>
+              <label><input type="radio" name="language" value="en" checked><span lang="en">English</span></label>
+              <label><input type="radio" name="language" value="es"><span lang="es">Español</span></label>
+              <label><input type="radio" name="language" value="fr"><span lang="fr">Français</span></label>
+            </fieldset>
           </div>
+          <p id="search-help">Search words and definitions in English, Spanish, or French.</p>
+          <p id="language-help" class="translation-help">Original definitions and machine translations are labeled. Missing or unreadable source definitions are identified.</p>
         </form>
       </div>
       <noscript><p class="state-message">Enable JavaScript to search this collection. You can also <a href="https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/databases/fcn_master_lexicon_phase8_6_primer.sqlite">download the complete database</a>.</p></noscript>
@@ -85,7 +92,7 @@
     </section>
 
     <section class="sources-section" id="sources" aria-labelledby="sources-heading">
-      <div class="sources-intro"><p class="eyebrow">Read the sources</p><h2 id="sources-heading">An archive with<br><em>its origins intact.</em></h2><p>The collection brings two sources into one searchable index. Each entry keeps its source label and the definitions available in that source.</p></div>
+      <div class="sources-intro"><p class="eyebrow">Read the sources</p><h2 id="sources-heading">An archive with<br><em>its origins intact.</em></h2><p>The collection brings two sources into one searchable index. Read definitions in English, Spanish, or French, with original source text preserved and translations clearly labeled. Download the original database and the complete trilingual archive for offline use.</p></div>
       <div class="source-notes">
         <article class="source-note"><span class="source-index">01</span><div><h3>Rémi Siméon</h3><p class="source-subtitle">28,709 digitized entries · French definitions</p><p>The historical foundation of this collection: entries extracted from the scan of <cite>Dictionnaire de la langue nahuatl ou mexicaine</cite>. Read the original French definitions alongside retained spellings, references, and variants.</p><a href="https://github.com/samvillasmith/amoxcalli-nahuatl-project/tree/main/source_data" target="_blank" rel="noopener">Source documentation <span aria-hidden="true">↗</span></a></div></article>
         <article class="source-note"><span class="source-index">02</span><div><h3>Wiktionary / Kaikki</h3><p class="source-subtitle">8,437 imported entries · English definitions</p><p>A complementary lexical source imported from structured Wiktionary data through Kaikki. These records are labeled separately so you can distinguish them from the historical Siméon material.</p><a href="https://kaikki.org/dictionary/Nahuatl/index.html" target="_blank" rel="noopener">Kaikki source collection <span aria-hidden="true">↗</span></a></div></article>
@@ -99,7 +106,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-main"><a class="footer-brand" href="/">Amoxcalli <span>In xochitl in cuicatl — The flower, the song</span></a><div class="footer-links"><a href="https://github.com/samvillasmith/amoxcalli-nahuatl-project" target="_blank" rel="noopener">Project repository <span aria-hidden="true">↗</span></a><a href="https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/databases/fcn_master_lexicon_phase8_6_primer.sqlite">Download the database <span aria-hidden="true">↗</span></a></div></div>
+    <div class="footer-main"><a class="footer-brand" href="/">Amoxcalli <span>In xochitl in cuicatl — The flower, the song</span></a><div class="footer-links"><a href="https://github.com/samvillasmith/amoxcalli-nahuatl-project" target="_blank" rel="noopener">Project repository <span aria-hidden="true">↗</span></a><a href="https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/databases/fcn_master_lexicon_phase8_6_primer.sqlite">Original database <span aria-hidden="true">↗</span></a><a href="https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/translations/lexicon-translations-2026-10-10.jsonl.gz">Trilingual definitions <span aria-hidden="true">↗</span></a></div></div>
     <div class="footer-bottom"><p>© 2026 Sam Villa-Smith, PhD · Flor y Canto Nahuatl</p><a href="mailto:svillasmith3@gmail.com">svillasmith3@gmail.com</a></div>
   </footer>
 

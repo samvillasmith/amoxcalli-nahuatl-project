@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node --check functions/search/index.mjs && node --check assets/search.js && node --check scripts/import-lexicon.mjs",
+    "check": "node --check functions/search/index.mjs && node --check assets/search.js && node --check scripts/import-lexicon.mjs && node --check scripts/import-translations.mjs",
     "import": "node scripts/import-lexicon.mjs",
     "preview": "node scripts/preview.mjs"
   },
