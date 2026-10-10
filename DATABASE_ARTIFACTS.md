@@ -36,12 +36,14 @@ The helper requires AWS credentials with write access to `s3://nahuatl-language/
 | `fcn_master_lexicon_phase8_3_exports.sqlite` | `curriculum/fcn_master_lexicon_phase8_3_exports.sqlite` | 107036672 | `F3F41FB0E2B1E7C8BDF99BE8319E416910FC75F3265573BFB3F75A93B5FFA4BF` | <https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/databases/fcn_master_lexicon_phase8_3_exports.sqlite> |
 | `fcn_master_lexicon_phase8_4_assessment.sqlite` | `curriculum/fcn_master_lexicon_phase8_4_assessment.sqlite` | 107061248 | `C1C7B6B23D8E4E4E66140A679CE2108E6A4F96E333836569C5AC670BD0D8D7B9` | <https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/databases/fcn_master_lexicon_phase8_4_assessment.sqlite> |
 | `fcn_master_lexicon_phase8_5_products.sqlite` | `curriculum/fcn_master_lexicon_phase8_5_products.sqlite` | 107061248 | `C1C7B6B23D8E4E4E66140A679CE2108E6A4F96E333836569C5AC670BD0D8D7B9` | <https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/databases/fcn_master_lexicon_phase8_5_products.sqlite> |
-| `fcn_master_lexicon_phase8_6_primer.sqlite` | `database/fcn_master_lexicon_phase8_6_primer.sqlite` | 107200512 | `15D29FDFDDDE5FC623788B1382B6CBC4BD2537165BF9F32F66E0512CBA7C17D8` | <https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/databases/fcn_master_lexicon_phase8_6_primer.sqlite> |
+| `fcn_master_lexicon_phase8_6_primer.sqlite` | `database/fcn_master_lexicon_phase8_6_primer.sqlite` | 107200512 | `06FCC30F8762F999F53B388FC96FF3D19863FFD087026D5E9214349AF15761BE` | <https://nahuatl-language.s3.us-east-1.amazonaws.com/molina/databases/fcn_master_lexicon_phase8_6_primer.sqlite> |
 
 ## Notes
 
 - `database/fcn_master_lexicon_phase8_6_primer.sqlite` is the preferred canonical production database path.
 - `curriculum/fcn_master_lexicon_phase8_6_primer.sqlite` is a legacy local fallback until every script is migrated.
-- The top-level `fcn_master_lexicon_phase8_6_primer.sqlite` is excluded from this manifest because it has a different hash than the canonical curriculum copy and appears to be a stale duplicate.
+- The public Phase 8.6 release is the verified snapshot from `s3://nahuatl-language/molina/phase_8_6/fcn_master_lexicon_phase8_6_primer.sqlite`, also published at the normalized database URL above. Its 37,146 lexicon entries match the repository's MSN inventory, including 28,709 Siméon entries and 8,437 Kaikki entries. The checksum above identifies this published snapshot and replaces the checksum previously recorded for an unpublished local build.
+- This snapshot retains the earlier `lesson_vocab` schema (`surface_form`, `linked_entry_id`). Helpers requiring `display_form` and `entry_id` need that table rebuilt with `create_lesson_vocab.py` first.
+- The top-level `fcn_master_lexicon_phase8_6_primer.sqlite` is excluded from this manifest; use the verified `database/` copy for the public release.
 - New `.sqlite`, `.sqlite3`, `.db`, `*.sqlite-wal`, and `*.sqlite-shm` files are ignored by Git. Keep database binaries in S3 and commit source code, manifests, reports, and generated CSV/JSON exports to Git.
 - Legacy tracked SQLite files should be removed from Git after their S3 uploads are confirmed.
