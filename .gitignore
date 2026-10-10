@@ -9,3 +9,7 @@ __pycache__/
 *.sqlite3
 *.sqlite-shm
 *.sqlite-wal
+database/lexicon-search.jsonl
+.deployment-state/
+.env*
+node_modules/

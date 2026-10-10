@@ -1,0 +1,16 @@
+{
+  "name": "amoxcalli-lexicon-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check functions/search/index.mjs && node --check assets/search.js && node --check scripts/import-lexicon.mjs",
+    "import": "node scripts/import-lexicon.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "dependencies": {
+    "@neon/config": "^1.8.6",
+    "@neon/env": "^1.5.3",
+    "@neon/functions": "^0.11.0",
+    "pg": "^8.23.1"
+  }
+}

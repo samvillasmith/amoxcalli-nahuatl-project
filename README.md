@@ -1,6 +1,8 @@
 # Flor y Canto Nahuatl (FCN)
 
-The first machine-readable Nahuatl language infrastructure: a 37,000-entry lexicon, a complete CEFR A1–B1 instructional curriculum, a multi-register orthographic standard, and four production-ready reference manuals — all built from primary historical and contemporary sources and released open.
+An open, searchable Nahuatl lexical archive: 37,146 dictionary entries, including 28,709 parsed from Rémi Siméon's 1885 dictionary, with original definitions, spellings, variants, and source references retained. The curriculum, proposed written standards, and reference manuals continue as a separate area of the project.
+
+**[Search the lexicon](https://amoxcalli.org/)** · **[Explore the MSN project](https://amoxcalli.org/msn/)** · [Website source and deployment notes](website/README.md)
 
 ---
 
@@ -302,7 +304,7 @@ See `DATABASE_ARTIFACTS.md` for SHA-256 checksums, local source paths, and uploa
 - [ ] Parse Molina 1571 *Vocabulario* (~23,000 additional entries)
 - [ ] OCR error corrections in Siméon source
 - [ ] Cross-variety lemma alignment (Classical ↔ Central ↔ Huasteca)
-- [ ] Searchable dictionary website
+- [x] Searchable dictionary website
 - [ ] Publish primer-ready exports from `curriculum/` instructional track
 - [ ] Phase B/C expansion of MSN-P poetic inventory (`poetic_register/`)
 - [ ] Community validation pipeline for proposed literary-modern items
